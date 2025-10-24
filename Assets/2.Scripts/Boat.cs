@@ -26,6 +26,13 @@ public class Boat : MonoBehaviour
     [Tooltip("회전 속도")]
     public float rotationSpeed = 1f;
 
+    [Header("Collision Settings")]
+    [Tooltip("충돌 시 왼쪽으로 이동할 추가 거리")]
+    public float collisionOffsetDistance = 10f;
+
+    [Tooltip("충돌 이펙트 프리팹")]
+    public GameObject collisionEffectPrefab;
+
     private Vector3 targetPosition;
     private float targetRotation;
     private float timer;
@@ -77,16 +84,16 @@ public class Boat : MonoBehaviour
         );
 
         // 목표 회전으로 부드럽게 회전
-        float currentRotation = transform.eulerAngles.z;
+        float currentRot = transform.eulerAngles.z;
         // Z축 회전을 -180 ~ 180 범위로 정규화
-        if (currentRotation > 180f) currentRotation -= 360f;
+        if (currentRot > 180f) currentRot -= 360f;
 
-        float newRotation = Mathf.LerpAngle(
-            currentRotation,
+        float newRot = Mathf.LerpAngle(
+            currentRot,
             targetRotation,
             Time.deltaTime * rotationSpeed
         );
-        transform.rotation = Quaternion.Euler(0, 0, newRotation);
+        transform.rotation = Quaternion.Euler(0, 0, newRot);
     }
 
     /// <summary>
@@ -104,6 +111,43 @@ public class Boat : MonoBehaviour
     private float GetRandomRotation()
     {
         return Random.Range(-maxRotationAngle, maxRotationAngle);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Obstacle과 충돌 시 (Trigger 방식)
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            HandleCollision(collision.gameObject);
+        }
+    }
+
+    /// <summary>
+    /// 충돌 시 이펙트 생성 및 Obstacle 위치 이동
+    /// </summary>
+    private void HandleCollision(GameObject obstacle)
+    {
+        Debug.Log("Boat collided with obstacle!");
+
+        // 충돌 이펙트 생성
+        if (collisionEffectPrefab != null)
+        {
+            Instantiate(collisionEffectPrefab, transform.position, Quaternion.identity);
+        }
+
+        // Boat의 너비 계산
+        float boatWidth = 0f;
+        if (spriteRenderer != null)
+        {
+            boatWidth = spriteRenderer.bounds.size.x;
+        }
+
+        // Obstacle을 왼쪽으로 이동 (boat width + offset distance)
+        Vector3 obstaclePosition = obstacle.transform.position;
+        obstaclePosition.x -= (boatWidth + collisionOffsetDistance);
+        obstacle.transform.position = obstaclePosition;
+
+        Debug.Log($"Obstacle moved left by {boatWidth + collisionOffsetDistance} units. New position: {obstaclePosition}");
     }
 
     private void OnDrawGizmosSelected()
