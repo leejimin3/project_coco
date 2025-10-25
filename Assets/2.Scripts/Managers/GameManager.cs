@@ -29,8 +29,13 @@ public class GameManager : BaseSingleton<GameManager>
     public int currentOpenedFriend = 0;
     public bool isFriendComplete = false;
 
+    [Header("Game State")]
+    private bool isGameOver = false;
+
     private void Update()
     {
+        if (isGameOver) return;
+
         TryInput();
         OpenNextFriend();
     }
@@ -131,13 +136,59 @@ public class GameManager : BaseSingleton<GameManager>
     {
         List<KeyCode> keyList = this.keys;
         List<KeyCode> returnKeyList = new List<KeyCode>();
-        
+
         for (int i = 0; i < count; i++)
         {
             int ran = UnityEngine.Random.Range(0, keyList.Count);
-            returnKeyList.Add(keyList[ran]);   
+            returnKeyList.Add(keyList[ran]);
         }
-        
+
         return returnKeyList;
+    }
+
+    /// <summary>
+    /// 게임 실패 처리
+    /// </summary>
+    public void OnGameFail()
+    {
+        if (isGameOver) return;
+
+        isGameOver = true;
+
+        Debug.Log("===========================================");
+        Debug.Log("[GameManager] GAME FAILED!");
+        Debug.Log($"[GameManager] Time: {slider.value * duration:F2}s / {duration}s");
+        Debug.Log($"[GameManager] Friends Opened: {currentOpenedFriend} / {btnsPos.Length}");
+        Debug.Log("===========================================");
+
+        // Time.timeScale을 0으로 설정하여 게임 정지
+        Time.timeScale = 0f;
+
+        Debug.Log("[GameManager] Game stopped (Time.timeScale = 0)");
+
+        // TODO: Fail UI 표시 또는 씬 전환 로직 추가
+    }
+
+    /// <summary>
+    /// 게임 성공 처리
+    /// </summary>
+    public void OnGamePass()
+    {
+        if (isGameOver) return;
+
+        isGameOver = true;
+
+        Debug.Log("===========================================");
+        Debug.Log("[GameManager] GAME PASSED!");
+        Debug.Log($"[GameManager] Time: {slider.value * duration:F2}s / {duration}s");
+        Debug.Log($"[GameManager] Friends Opened: {currentOpenedFriend} / {btnsPos.Length}");
+        Debug.Log("===========================================");
+
+        // Time.timeScale을 0으로 설정하여 게임 정지
+        Time.timeScale = 0f;
+
+        Debug.Log("[GameManager] Game stopped (Time.timeScale = 0)");
+
+        // TODO: Pass UI 표시 또는 씬 전환 로직 추가
     }
 }

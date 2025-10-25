@@ -47,12 +47,20 @@ public class Boat : MonoBehaviour
     [Tooltip("페이드 아웃 속도")]
     public float fadeOutSpeed = 1f;
 
+    [Header("Fail Settings")]
+    [Tooltip("Fail 판정 각도 (절대값)")]
+    public float failAngle = 90f;
+
+    [Tooltip("Fail 판정 후 대기 시간")]
+    public float failDelay = 0.2f;
+
     private Vector3 targetPosition;
     private float targetRotation;
     private float timer;
     private SpriteRenderer spriteRenderer;
     private bool isFadingOut = false;
     private float currentAlpha = 1f;
+    private bool hasTriggeredFail = false;
 
     private void Start()
     {
@@ -134,6 +142,9 @@ public class Boat : MonoBehaviour
 
         // 페이드 아웃 체크 및 처리
         UpdateFadeOut(newRot);
+
+        // Fail 체크
+        CheckFail(newRot);
     }
 
     /// <summary>
@@ -207,6 +218,43 @@ public class Boat : MonoBehaviour
         Color color = spriteRenderer.color;
         color.a = currentAlpha;
         spriteRenderer.color = color;
+    }
+
+    /// <summary>
+    /// Fail 조건 체크 (90도 이상)
+    /// </summary>
+    private void CheckFail(float rotation)
+    {
+        if (hasTriggeredFail) return;
+
+        float absRotation = Mathf.Abs(rotation);
+
+        if (absRotation >= failAngle)
+        {
+            hasTriggeredFail = true;
+            Debug.Log($"[Boat] Fail triggered! Rotation: {absRotation:F2} degrees");
+            StartCoroutine(TriggerFailAfterDelay());
+        }
+    }
+
+    /// <summary>
+    /// Fail 처리 (0.2초 대기 후 GameManager에 알림)
+    /// </summary>
+    private System.Collections.IEnumerator TriggerFailAfterDelay()
+    {
+        Debug.Log($"[Boat] Waiting {failDelay} seconds before fail...");
+        yield return new WaitForSeconds(failDelay);
+
+        Debug.Log("[Boat] Fail delay complete, notifying GameManager");
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnGameFail();
+        }
+        else
+        {
+            Debug.LogError("[Boat] GameManager instance not found!");
+        }
     }
 
     /// <summary>
