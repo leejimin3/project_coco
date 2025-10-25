@@ -22,8 +22,13 @@ public class ObstacleManager : BaseSingleton<ObstacleManager>
         Debug.Log("Remove");
     }
 
-    public void SuccecsObstacle()
+    public void SuccecsObstacle(ObstacleElement ele)
     {
+        //TODO : 애니 재생
+        ele.HideKey();
+        TriggeredObstacle.Remove(ele);
+        Debug.Log("Succecs");
+        Destroy(ele.gameObject);
         
     }
 }
