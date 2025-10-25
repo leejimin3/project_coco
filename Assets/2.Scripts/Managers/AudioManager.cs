@@ -33,6 +33,8 @@ public enum Sfx
     cutScene5,
     cutScene6,
     bgm_cutScene,
+    
+    bgm_extream,
 }
 
 [Serializable]

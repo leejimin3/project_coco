@@ -10,7 +10,14 @@ public class OutGameManager : MonoBehaviour
 
     public void MoveScene(int diff)
     {
+        AudioManager.Instance.StopSfxLoop();
         DataManager.Instance.difficulty = diff;
         SceneManager.LoadScene(1);
+    }
+
+    public void ReIntro()
+    {
+        AudioManager.Instance.StopSfxLoop();
+        SceneManager.LoadScene(0);
     }
 }

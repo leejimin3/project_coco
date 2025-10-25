@@ -33,11 +33,26 @@ public class GameManager : BaseSingleton<GameManager>
     [Header("Game State")]
     private bool isGameOver = false;
 
+    public GameObject[] SpawnManagers;
+    
+    public GameObject ObstacleTrigger;
+    
+
     private void Start()
     {
-        AudioManager.Instance.PlaySfxLoop(Sfx.bgm_ingame);
+        if (DataManager.Instance.difficulty == 0)
+        {
+            AudioManager.Instance.PlaySfxLoop(Sfx.bgm_ingame);            
+        }
+        else if (DataManager.Instance.difficulty == 1)
+        {
+            AudioManager.Instance.PlaySfxLoop(Sfx.bgm_extream);
+            ObstacleTrigger.transform.position += new Vector3(4.36f, 0f, 0f);
+            ObstacleTrigger.GetComponent<BoxCollider2D>().size = new Vector3(12f, 4f);
+        }
+
         StartFill();
-        Debug.Log(DataManager.Instance.difficulty);
+        Instantiate(SpawnManagers[DataManager.Instance.difficulty]);
     }
 
     private void Update()

@@ -135,5 +135,13 @@ MonoBehaviour:
       Value:
       - clip: {fileID: 8300000, guid: b8e7ca72224a6ec4788e10a25328a001, type: 3}
         volume: 1
+    - Key: 22
+      Value:
+      - clip: {fileID: 8300000, guid: 90272774c2dc08e44b4c7184dfa9d4ec, type: 3}
+        volume: 1
+    - Key: 23
+      Value:
+      - clip: {fileID: 8300000, guid: 41f4c7666a1252648b04871d2178b648, type: 3}
+        volume: 1
   bgms: []
   bgmVolumes: []
