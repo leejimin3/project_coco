@@ -35,13 +35,23 @@ public class GameManager : BaseSingleton<GameManager>
         OpenNextFriend();
     }
 
-    public void TryAttack(KeyCode key)
+    public bool TryAttack(KeyCode key)
     {
-        foreach (SkillButton skillButton in buttonList)
+        var obstacles = ObstacleManager.Instance.TriggeredObstacle;
+        foreach (var obstacle in obstacles)
         {
-            
+            foreach (var code in obstacle.Value)
+            {
+                if (code == key)
+                {
+                    ObstacleManager.Instance.SuccecsObstacle(obstacle.Key);
+                    return true;
+                }
+            }
         }
-    }
+
+        return false;
+    }   
 
     public void TryInput()
     {

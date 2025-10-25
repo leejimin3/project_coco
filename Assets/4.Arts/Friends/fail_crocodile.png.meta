@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f875160bc205da247903851a03db40e6
+guid: 445494705566ea343aae0725d9760757
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8883883376808241954
-    second: KakaoTalk_20251025_031932004_0
+      213: -5089572917384814318
+    second: fail_crocodile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KakaoTalk_20251025_031932004_0
+      name: fail_crocodile_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 104
-        width: 471
-        height: 339
+        x: 0
+        y: 0
+        width: 305
+        height: 386
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed4d85b332b16b480800000000000000
-      internalID: -8883883376808241954
+      spriteID: 21164d8b5643e59b0800000000000000
+      internalID: -5089572917384814318
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      KakaoTalk_20251025_031932004_0: -8883883376808241954
+      fail_crocodile_0: -5089572917384814318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
