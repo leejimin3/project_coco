@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
-/// 장애물 스폰 관리 시스템
-/// 화면 오른쪽에서 장애물을 생성하여 왼쪽으로 흘러보냄
+/// 장애물 스폰 관리 시스템 (Lane 기반)
+/// 각 Lane마다 다른 장애물, 속도, 위치 설정
 /// </summary>
 public class ObstacleSpawnManager : MonoBehaviour
 {
@@ -16,62 +16,76 @@ public class ObstacleSpawnManager : MonoBehaviour
 
         [Tooltip("이 장애물의 스폰 가중치 (높을수록 자주 등장)")]
         public float spawnWeight = 1f;
-
-        [HideInInspector] public float individualSpeed; // 개별 속도
-        [HideInInspector] public float wavePhaseX; // 물결 위상 X
-        [HideInInspector] public float wavePhaseY; // 물결 위상 Y
-        [HideInInspector] public Vector3 basePosition; // 기준 위치
     }
 
-    [Header("Spawn Settings")]
-    [Tooltip("스폰할 장애물 목록")]
-    public ObstacleData[] obstacles;
+    [System.Serializable]
+    public class Lane
+    {
+        [Header("Lane Info")]
+        [Tooltip("Lane 이름")]
+        public string laneName = "Lane 1";
 
-    [Tooltip("장애물 스폰 간격 (초)")]
-    public float spawnInterval = 2f;
+        [Header("Obstacles")]
+        [Tooltip("이 Lane에서 스폰할 장애물 목록")]
+        public ObstacleData[] obstacles;
 
-    [Tooltip("스폰 간격 랜덤 범위 (±초)")]
-    public float spawnIntervalRandomRange = 0.5f;
+        [Header("Spawn Settings")]
+        [Tooltip("장애물 스폰 간격 (초)")]
+        public float spawnInterval = 2f;
 
-    [Header("Spawn Position")]
+        [Tooltip("스폰 간격 랜덤 범위 (±초)")]
+        public float spawnIntervalRandomRange = 0.5f;
+
+        [Header("Position")]
+        [Tooltip("Y축 스폰 위치 (화면 중앙 기준 오프셋)")]
+        public float spawnYOffset = 0f;
+
+        [Tooltip("스폰 위치 Y축 랜덤 범위 (±)")]
+        public float spawnYRandomRange = 0f;
+
+        [Header("Movement")]
+        [Tooltip("장애물 기본 이동 속도")]
+        public float moveSpeed = 10f;
+
+        [Tooltip("이동 속도 랜덤 범위 (±)")]
+        public float moveSpeedRandomRange = 2f;
+
+        [Header("Flow Effect")]
+        [Tooltip("물결 효과 활성화")]
+        public bool enableFlowEffect = true;
+
+        [Tooltip("물결 X축 흔들림 강도")]
+        public float flowWaveAmplitudeX = 0.3f;
+
+        [Tooltip("물결 Y축 흔들림 강도")]
+        public float flowWaveAmplitudeY = 0.2f;
+
+        [Tooltip("물결 속도")]
+        public float flowWaveSpeed = 2f;
+
+        [HideInInspector] public float nextSpawnTime;
+    }
+
+    [Header("Lane Settings")]
+    [Tooltip("Lane 목록")]
+    public Lane[] lanes;
+
+    [Header("Global Settings")]
     [Tooltip("X축 스폰 위치 오프셋 (화면 오른쪽 끝 기준)")]
     public float spawnXOffset = 1f;
-
-    [Tooltip("Y축 스폰 위치 (화면 중앙 기준 오프셋)")]
-    public float spawnYOffset = 0f;
-
-    [Tooltip("스폰 위치 Y축 랜덤 범위 (±)")]
-    public float spawnYRandomRange = 0f;
-
-    [Header("Movement Settings")]
-    [Tooltip("장애물 기본 이동 속도")]
-    public float moveSpeed = 10f;
-
-    [Tooltip("이동 속도 랜덤 범위 (±)")]
-    public float moveSpeedRandomRange = 2f;
 
     [Tooltip("이동 방향 (-1: 왼쪽, 1: 오른쪽)")]
     public float moveDirection = -1f;
 
-    [Header("Flow Effect (물결 효과)")]
-    [Tooltip("물결 효과 활성화")]
-    public bool enableFlowEffect = true;
-
-    [Tooltip("물결 X축 흔들림 강도")]
-    public float flowWaveAmplitudeX = 0.3f;
-
-    [Tooltip("물결 Y축 흔들림 강도")]
-    public float flowWaveAmplitudeY = 0.2f;
-
-    [Tooltip("물결 속도 (높을수록 빠르게 흔들림)")]
-    public float flowWaveSpeed = 2f;
+    [Header("Debug")]
+    [Tooltip("디버그 로그 출력")]
+    public bool showDebugLogs = true;
 
     private Camera mainCamera;
     private float spawnX;
     private float despawnX;
     private List<GameObject> activeObstacles = new List<GameObject>();
     private List<ObstacleFlowData> obstacleFlowDataList = new List<ObstacleFlowData>();
-    private float nextSpawnTime;
 
     // 물결 효과 데이터
     private class ObstacleFlowData
@@ -81,6 +95,10 @@ public class ObstacleSpawnManager : MonoBehaviour
         public float wavePhaseX;
         public float wavePhaseY;
         public Vector3 basePosition;
+        public bool useFlowEffect;
+        public float flowAmplitudeX;
+        public float flowAmplitudeY;
+        public float flowSpeed;
     }
 
     private void Start()
@@ -88,8 +106,11 @@ public class ObstacleSpawnManager : MonoBehaviour
         mainCamera = Camera.main;
         UpdateSpawnPositions();
 
-        // 첫 스폰 시간 설정
-        nextSpawnTime = Time.time + spawnInterval;
+        // 각 Lane의 첫 스폰 시간 설정
+        foreach (var lane in lanes)
+        {
+            lane.nextSpawnTime = Time.time + lane.spawnInterval;
+        }
     }
 
     private void Update()
@@ -97,14 +118,18 @@ public class ObstacleSpawnManager : MonoBehaviour
         // 카메라가 움직일 수 있으므로 매 프레임 업데이트
         UpdateSpawnPositions();
 
-        // 스폰 체크
-        if (Time.time >= nextSpawnTime && obstacles.Length > 0)
+        // 각 Lane별로 스폰 체크
+        for (int i = 0; i < lanes.Length; i++)
         {
-            SpawnObstacle();
+            Lane lane = lanes[i];
+            if (Time.time >= lane.nextSpawnTime && lane.obstacles.Length > 0)
+            {
+                SpawnObstacleInLane(lane, i);
 
-            // 다음 스폰 시간 계산 (랜덤 범위 적용)
-            float randomOffset = Random.Range(-spawnIntervalRandomRange, spawnIntervalRandomRange);
-            nextSpawnTime = Time.time + spawnInterval + randomOffset;
+                // 다음 스폰 시간 계산
+                float randomOffset = Random.Range(-lane.spawnIntervalRandomRange, lane.spawnIntervalRandomRange);
+                lane.nextSpawnTime = Time.time + lane.spawnInterval + randomOffset;
+            }
         }
 
         // 활성 장애물 이동
@@ -121,7 +146,6 @@ public class ObstacleSpawnManager : MonoBehaviour
     {
         if (mainCamera != null)
         {
-            // 화면 오른쪽 끝 위치 계산
             float screenHeight = mainCamera.orthographicSize * 2f;
             float screenWidth = screenHeight * mainCamera.aspect;
 
@@ -131,21 +155,21 @@ public class ObstacleSpawnManager : MonoBehaviour
     }
 
     /// <summary>
-    /// 장애물 스폰
+    /// 특정 Lane에 장애물 스폰
     /// </summary>
-    private void SpawnObstacle()
+    private void SpawnObstacleInLane(Lane lane, int laneIndex)
     {
         // 가중치 기반 랜덤 선택
-        GameObject selectedPrefab = SelectRandomObstacle();
+        GameObject selectedPrefab = SelectRandomObstacle(lane.obstacles);
         if (selectedPrefab == null) return;
 
         // 스폰 위치 계산
-        float spawnY = (mainCamera != null ? mainCamera.transform.position.y : 0f) + spawnYOffset;
+        float spawnY = (mainCamera != null ? mainCamera.transform.position.y : 0f) + lane.spawnYOffset;
 
         // Y축 랜덤 오프셋 적용
-        if (spawnYRandomRange > 0)
+        if (lane.spawnYRandomRange > 0)
         {
-            spawnY += Random.Range(-spawnYRandomRange, spawnYRandomRange);
+            spawnY += Random.Range(-lane.spawnYRandomRange, lane.spawnYRandomRange);
         }
 
         Vector3 spawnPosition = new Vector3(spawnX, spawnY, 0f);
@@ -159,20 +183,27 @@ public class ObstacleSpawnManager : MonoBehaviour
         ObstacleFlowData flowData = new ObstacleFlowData
         {
             obstacle = obstacle,
-            individualSpeed = moveSpeed + Random.Range(-moveSpeedRandomRange, moveSpeedRandomRange),
-            wavePhaseX = Random.Range(0f, Mathf.PI * 2f), // 랜덤 시작 위상
+            individualSpeed = lane.moveSpeed + Random.Range(-lane.moveSpeedRandomRange, lane.moveSpeedRandomRange),
+            wavePhaseX = Random.Range(0f, Mathf.PI * 2f),
             wavePhaseY = Random.Range(0f, Mathf.PI * 2f),
-            basePosition = spawnPosition
+            basePosition = spawnPosition,
+            useFlowEffect = lane.enableFlowEffect,
+            flowAmplitudeX = lane.flowWaveAmplitudeX,
+            flowAmplitudeY = lane.flowWaveAmplitudeY,
+            flowSpeed = lane.flowWaveSpeed
         };
         obstacleFlowDataList.Add(flowData);
 
-        Debug.Log($"Obstacle spawned at X={spawnX:F2}, Y={spawnY:F2}, Speed={flowData.individualSpeed:F2}");
+        if (showDebugLogs)
+        {
+            Debug.Log($"[{lane.laneName}] Obstacle spawned: {selectedPrefab.name} at Y={spawnY:F2}, Speed={flowData.individualSpeed:F2}");
+        }
     }
 
     /// <summary>
     /// 가중치 기반 랜덤 장애물 선택
     /// </summary>
-    private GameObject SelectRandomObstacle()
+    private GameObject SelectRandomObstacle(ObstacleData[] obstacles)
     {
         if (obstacles.Length == 0) return null;
 
@@ -217,14 +248,14 @@ public class ObstacleSpawnManager : MonoBehaviour
                 Vector3 finalPosition = flowData.basePosition;
 
                 // 물결 효과 적용
-                if (enableFlowEffect)
+                if (flowData.useFlowEffect)
                 {
                     // X축 흔들림 (sin 파동)
-                    float waveOffsetX = Mathf.Sin(Time.time * flowWaveSpeed + flowData.wavePhaseX) * flowWaveAmplitudeX;
+                    float waveOffsetX = Mathf.Sin(Time.time * flowData.flowSpeed + flowData.wavePhaseX) * flowData.flowAmplitudeX;
                     finalPosition.x += waveOffsetX;
 
                     // Y축 흔들림 (cos 파동 - 다른 패턴)
-                    float waveOffsetY = Mathf.Cos(Time.time * flowWaveSpeed + flowData.wavePhaseY) * flowWaveAmplitudeY;
+                    float waveOffsetY = Mathf.Cos(Time.time * flowData.flowSpeed + flowData.wavePhaseY) * flowData.flowAmplitudeY;
                     finalPosition.y += waveOffsetY;
                 }
 
@@ -243,7 +274,6 @@ public class ObstacleSpawnManager : MonoBehaviour
             if (obstacleFlowDataList[i].obstacle == null)
             {
                 obstacleFlowDataList.RemoveAt(i);
-                activeObstacles.RemoveAt(i);
                 continue;
             }
 
@@ -256,7 +286,6 @@ public class ObstacleSpawnManager : MonoBehaviour
                 obstacleFlowDataList.RemoveAt(i);
                 activeObstacles.Remove(obstacle);
                 Destroy(obstacle);
-                Debug.Log("Obstacle despawned (left screen)");
             }
             // 오른쪽으로 이동 중일 때 오른쪽 끝을 벗어나면 제거
             else if (moveDirection > 0 && obstacleX > spawnX)
@@ -265,7 +294,6 @@ public class ObstacleSpawnManager : MonoBehaviour
                 obstacleFlowDataList.RemoveAt(i);
                 activeObstacles.Remove(obstacle);
                 Destroy(obstacle);
-                Debug.Log("Obstacle despawned (right screen)");
             }
         }
     }
@@ -290,37 +318,34 @@ public class ObstacleSpawnManager : MonoBehaviour
         if (mainCamera == null)
             mainCamera = Camera.main;
 
-        if (mainCamera != null)
+        if (mainCamera != null && lanes != null)
         {
             float screenHeight = mainCamera.orthographicSize * 2f;
             float screenWidth = screenHeight * mainCamera.aspect;
-
             float tempSpawnX = mainCamera.transform.position.x + screenWidth / 2f + spawnXOffset;
-            float spawnY = mainCamera.transform.position.y + spawnYOffset;
 
-            // 스폰 위치 표시
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(new Vector3(tempSpawnX, spawnY, 0f), 0.5f);
-
-            // 스폰 Y 범위 표시
-            if (spawnYRandomRange > 0)
+            // 각 Lane의 스폰 위치 표시
+            for (int i = 0; i < lanes.Length; i++)
             {
-                Gizmos.color = Color.yellow;
-                Gizmos.DrawLine(
-                    new Vector3(tempSpawnX, spawnY - spawnYRandomRange, 0f),
-                    new Vector3(tempSpawnX, spawnY + spawnYRandomRange, 0f)
-                );
-            }
+                Lane lane = lanes[i];
+                float spawnY = mainCamera.transform.position.y + lane.spawnYOffset;
 
-            // 물결 효과 범위 표시
-            if (enableFlowEffect)
-            {
-                Gizmos.color = Color.cyan;
-                // X축 흔들림 범위
-                Gizmos.DrawWireCube(
-                    new Vector3(tempSpawnX - flowWaveAmplitudeX, spawnY, 0f),
-                    new Vector3(flowWaveAmplitudeX * 2f, 0.2f, 0f)
-                );
+                // 스폰 위치 표시 (Lane별로 다른 색상)
+                Gizmos.color = i == 0 ? Color.green : Color.cyan;
+                Gizmos.DrawWireSphere(new Vector3(tempSpawnX, spawnY, 0f), 0.3f);
+
+                // Lane 이름 표시 위치
+                Vector3 labelPos = new Vector3(tempSpawnX + 0.5f, spawnY, 0f);
+
+                // Y 범위 표시
+                if (lane.spawnYRandomRange > 0)
+                {
+                    Gizmos.color = i == 0 ? Color.yellow : Color.magenta;
+                    Gizmos.DrawLine(
+                        new Vector3(tempSpawnX, spawnY - lane.spawnYRandomRange, 0f),
+                        new Vector3(tempSpawnX, spawnY + lane.spawnYRandomRange, 0f)
+                    );
+                }
             }
         }
     }
