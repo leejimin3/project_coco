@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 8f378615caca74a2fafa8abfcd62425a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2346793664056998781
+    second: Coco speaking _0
+  - first:
+      213: -5602270669103168778
+    second: Coco speaking _1
+  - first:
+      213: 8182014754072993156
+    second: Coco speaking _2
+  - first:
+      213: -7236324685139243054
+    second: Coco speaking _3
+  - first:
+      213: 373612754944350690
+    second: Coco speaking _4
+  - first:
+      213: 8096560852570010516
+    second: Coco speaking _5
+  - first:
+      213: 6545735105861568643
+    second: Coco speaking _6
+  - first:
+      213: 1269263371851441550
+    second: Coco speaking _7
+  - first:
+      213: 3905081397915851334
+    second: Coco speaking _8
+  - first:
+      213: 1283159209472482253
+    second: Coco speaking _9
+  - first:
+      213: 291802554020698300
+    second: Coco speaking _10
+  - first:
+      213: 6772640878861070056
+    second: Coco speaking _11
+  - first:
+      213: -6797817225735250898
+    second: Coco speaking _12
+  - first:
+      213: -2828868522460767813
+    second: Coco speaking _13
+  - first:
+      213: 6928922108547750697
+    second: Coco speaking _14
+  - first:
+      213: 6855614254075733505
+    second: Coco speaking _15
+  - first:
+      213: 1070979296317595257
+    second: Coco speaking _16
+  - first:
+      213: -1064134083395711253
+    second: Coco speaking _17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Coco speaking _0
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1943
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b3143576c719020800000000000000
+      internalID: 2346793664056998781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1869
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f20480328cb042b0800000000000000
+      internalID: -5602270669103168778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _2
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1868
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d9683911b5c8170800000000000000
+      internalID: 8182014754072993156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1641
+        width: 296
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9530632d65f2500800000000000000
+      internalID: 373612754944350690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _5
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1720
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493f4cfa233cc5070800000000000000
+      internalID: 8096560852570010516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _6
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1646
+        width: 471
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388cea2e56f17da50800000000000000
+      internalID: 6545735105861568643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _9
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1401
+        width: 685
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbd0e6a082bec110800000000000000
+      internalID: 1283159209472482253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _10
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 1578
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb894f870e0bc0400800000000000000
+      internalID: 291802554020698300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _11
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1572
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eeadcf0ff04dfd50800000000000000
+      internalID: 6772640878861070056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _12
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1572
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cd404ef3d49a1a0800000000000000
+      internalID: -6797817225735250898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _14
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1212
+        width: 376
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bd65c52f9782060800000000000000
+      internalID: 6928922108547750697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _15
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1023
+        width: 496
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106e94b67d8042f50800000000000000
+      internalID: 6855614254075733505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _16
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 561
+        width: 670
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97edec6eef1ecde00800000000000000
+      internalID: 1070979296317595257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco speaking _17
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 335
+        width: 735
+        height: 561
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee00dd60bf6b31f0800000000000000
+      internalID: -1064134083395711253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3c5a34bc745f942bfb316e57d483c54c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Coco speaking _0: 2346793664056998781
+      Coco speaking _1: -5602270669103168778
+      Coco speaking _10: 291802554020698300
+      Coco speaking _11: 6772640878861070056
+      Coco speaking _12: -6797817225735250898
+      Coco speaking _13: -2828868522460767813
+      Coco speaking _14: 6928922108547750697
+      Coco speaking _15: 6855614254075733505
+      Coco speaking _16: 1070979296317595257
+      Coco speaking _17: -1064134083395711253
+      Coco speaking _18: -1259798104
+      Coco speaking _2: 8182014754072993156
+      Coco speaking _3: -7236324685139243054
+      Coco speaking _4: 373612754944350690
+      Coco speaking _5: 8096560852570010516
+      Coco speaking _6: 6545735105861568643
+      Coco speaking _7: 1269263371851441550
+      Coco speaking _8: 3905081397915851334
+      Coco speaking _9: 1283159209472482253
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
