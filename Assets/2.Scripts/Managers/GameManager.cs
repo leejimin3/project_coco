@@ -32,12 +32,16 @@ public class GameManager : BaseSingleton<GameManager>
     [Header("Game State")]
     private bool isGameOver = false;
 
+    private void Start()
+    {
+        StartFill();
+    }
+
     private void Update()
     {
         if (isGameOver) return;
 
         TryInput();
-        OpenNextFriend();
     }
 
     public bool TryAttack(KeyCode key)
@@ -72,7 +76,7 @@ public class GameManager : BaseSingleton<GameManager>
     public void OpenNextFriend()
     {
         if (isFriendComplete) return;
-        if(slider.value < nextFriendValue[currentOpenedFriend]) return;
+        //if(slider.value < nextFriendValue[currentOpenedFriend]) return;
         
         int btnRan = UnityEngine.Random.Range(0, buttonList.Count);
         SkillButton btn = Instantiate(buttonList[btnRan], Vector3.zero, Quaternion.identity);
@@ -130,6 +134,7 @@ public class GameManager : BaseSingleton<GameManager>
         }
 
         slider.value = 1f; // 정확히 1로 맞추기
+        OnGamePass();
     }
 
     public List<KeyCode> GetRandomFriendsKeys(int count = 1)
@@ -161,6 +166,7 @@ public class GameManager : BaseSingleton<GameManager>
         Debug.Log($"[GameManager] Friends Opened: {currentOpenedFriend} / {btnsPos.Length}");
         Debug.Log("===========================================");
 
+        UIManager.Instance.OpenLosePanel();
         // Time.timeScale을 0으로 설정하여 게임 정지
         Time.timeScale = 0f;
 
@@ -184,6 +190,7 @@ public class GameManager : BaseSingleton<GameManager>
         Debug.Log($"[GameManager] Friends Opened: {currentOpenedFriend} / {btnsPos.Length}");
         Debug.Log("===========================================");
 
+        UIManager.Instance.OpenWinPanel();
         // Time.timeScale을 0으로 설정하여 게임 정지
         Time.timeScale = 0f;
 

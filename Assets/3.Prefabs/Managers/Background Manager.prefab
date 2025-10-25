@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1290909804577357064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6504412796698979060}
+  - component: {fileID: 5460727904424156628}
+  m_Layer: 0
+  m_Name: Background Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6504412796698979060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290909804577357064}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5460727904424156628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290909804577357064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73accc92231d54061b8cc344d0eb2874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundManager
+  layers:
+  - backgroundObject: {fileID: 0}
+    depth: 1
+    scrollSpeed: 1.1
+    clone: {fileID: 0}
+    spriteWidth: 0
+    startX: 0
+  - backgroundObject: {fileID: 0}
+    depth: 2
+    scrollSpeed: 1.2
+    clone: {fileID: 0}
+    spriteWidth: 0
+    startX: 0
+  - backgroundObject: {fileID: 0}
+    depth: 3
+    scrollSpeed: 1.3
+    clone: {fileID: 0}
+    spriteWidth: 0
+    startX: 0
+  - backgroundObject: {fileID: 0}
+    depth: 4
+    scrollSpeed: 1.4
+    clone: {fileID: 0}
+    spriteWidth: 0
+    startX: 0
+  scrollDirection: -1
+  globalSpeedMultiplier: 1
