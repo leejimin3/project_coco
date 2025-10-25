@@ -309,7 +309,7 @@ Transform:
   m_GameObject: {fileID: 259692235}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1502,25 +1502,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5772fc3f7e9fe43d799b16d68aa19632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawnManager
-  obstacles:
-  - obstaclePrefab: {fileID: 4909043747519201949, guid: b31cbafec6806406d9fcaf0804dc2cec, type: 3}
-    spawnWeight: 2
-    individualSpeed: 0
-    wavePhaseX: 0
-    wavePhaseY: 0
-    basePosition: {x: 0, y: 0, z: 0}
-  spawnInterval: 2
-  spawnIntervalRandomRange: 0.5
+  lanes:
+  - laneName: 1
+    obstacles:
+    - obstaclePrefab: {fileID: 4909043747519201949, guid: b31cbafec6806406d9fcaf0804dc2cec, type: 3}
+      weight: 1
+    spawnInterval: 5
+    spawnIntervalRandomRange: 2
+    spawnYOffset: -1.5
+    spawnYRandomRange: 0
+    moveSpeed: 2
+    moveSpeedRandomRange: 0
+    enableFlowEffect: 0
+    flowWaveAmplitudeX: 0
+    flowWaveAmplitudeY: 0
+    flowWaveSpeed: 0
+    nextSpawnTime: 0
+  - laneName: 2
+    obstacles:
+    - obstaclePrefab: {fileID: 4909043747519201949, guid: b31cbafec6806406d9fcaf0804dc2cec, type: 3}
+      weight: 1
+    spawnInterval: 5
+    spawnIntervalRandomRange: 2
+    spawnYOffset: -3
+    spawnYRandomRange: 0
+    moveSpeed: 2
+    moveSpeedRandomRange: 0
+    enableFlowEffect: 0
+    flowWaveAmplitudeX: 0
+    flowWaveAmplitudeY: 0
+    flowWaveSpeed: 0
+    nextSpawnTime: 0
   spawnXOffset: 1
-  spawnYOffset: -2
-  spawnYRandomRange: 0
-  moveSpeed: 5
-  moveSpeedRandomRange: 2
   moveDirection: -1
-  enableFlowEffect: 0
-  flowWaveAmplitudeX: 0.3
-  flowWaveAmplitudeY: 0.2
-  flowWaveSpeed: 2
+  showDebugLogs: 1
 --- !u!1 &1674786332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1754,7 @@ Transform:
   m_GameObject: {fileID: 1707092105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2131,6 +2146,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxRotationAngle: 15
   rotationSpeed: 1
+  restorationForce: 0.05
   collisionOffsetDistance: 10
   collisionEffectPrefab: {fileID: 0}
 --- !u!50 &2041730286

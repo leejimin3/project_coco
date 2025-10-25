@@ -26,6 +26,9 @@ public class Boat : MonoBehaviour
     [Tooltip("회전 속도")]
     public float rotationSpeed = 1f;
 
+    [Tooltip("0도로 복원하는 힘의 강도 (0이면 복원력 없음)")]
+    public float restorationForce = 0.5f;
+
     [Header("Collision Settings")]
     [Tooltip("충돌 시 왼쪽으로 이동할 추가 거리")]
     public float collisionOffsetDistance = 10f;
@@ -83,14 +86,17 @@ public class Boat : MonoBehaviour
             Time.deltaTime * moveSpeed
         );
 
-        // 목표 회전으로 부드럽게 회전
+        // 목표 회전으로 부드럽게 회전 + 0도로 복원하는 힘 적용
         float currentRot = transform.eulerAngles.z;
         // Z축 회전을 -180 ~ 180 범위로 정규화
         if (currentRot > 180f) currentRot -= 360f;
 
+        // 목표 회전각에 0도로의 복원력을 혼합
+        float adjustedTarget = Mathf.LerpAngle(targetRotation, 0f, restorationForce);
+
         float newRot = Mathf.LerpAngle(
             currentRot,
-            targetRotation,
+            adjustedTarget,
             Time.deltaTime * rotationSpeed
         );
         transform.rotation = Quaternion.Euler(0, 0, newRot);
@@ -133,6 +139,23 @@ public class Boat : MonoBehaviour
         if (collisionEffectPrefab != null)
         {
             Instantiate(collisionEffectPrefab, transform.position, Quaternion.identity);
+        }
+
+        // Obstacle의 충격 정보 가져오기
+        Obstacle obstacleComponent = obstacle.GetComponent<Obstacle>();
+        if (obstacleComponent != null)
+        {
+            // 현재 회전각에 충격 회전 추가 (제한 없이)
+            float currentRot = transform.eulerAngles.z;
+            if (currentRot > 180f) currentRot -= 360f;
+
+            float impactRotation = obstacleComponent.GetImpactRotation();
+            targetRotation += impactRotation;
+
+            // 타이머 리셋하여 바로 다음 랜덤 회전으로 덮어씌워지지 않도록
+            timer = 0f;
+
+            Debug.Log($"Impact applied: {impactRotation} degrees. Current target rotation: {targetRotation}");
         }
 
         // Boat의 너비 계산
