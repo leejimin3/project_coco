@@ -36,6 +36,10 @@ public class Boat : MonoBehaviour
     [Tooltip("충돌 이펙트 프리팹")]
     public GameObject collisionEffectPrefab;
 
+    [Header("Player Animation")]
+    [Tooltip("Coco 플레이어 참조")]
+    public Coco cocoPlayer;
+
     private Vector3 targetPosition;
     private float targetRotation;
     private float timer;
@@ -52,6 +56,21 @@ public class Boat : MonoBehaviour
             // 여기서는 로컬 위치 조정으로 처리
             Vector3 offset = new Vector3(0, spriteRenderer.bounds.extents.y, 0);
             transform.position += offset;
+        }
+
+        // Coco 플레이어 자동 찾기
+        if (cocoPlayer == null)
+        {
+            cocoPlayer = GetComponentInChildren<Coco>();
+            if (cocoPlayer == null)
+            {
+                cocoPlayer = FindObjectOfType<Coco>();
+            }
+
+            if (cocoPlayer == null)
+            {
+                Debug.LogWarning("Coco 플레이어를 찾을 수 없습니다. Boat Inspector에서 수동으로 할당해주세요.");
+            }
         }
 
         // 시작 위치를 중심으로 설정
@@ -100,6 +119,40 @@ public class Boat : MonoBehaviour
             Time.deltaTime * rotationSpeed
         );
         transform.rotation = Quaternion.Euler(0, 0, newRot);
+
+        // Coco 애니메이션 상태 업데이트
+        UpdateCocoAnimation(newRot);
+    }
+
+    /// <summary>
+    /// 회전각에 따라 Coco 애니메이션 상태 변경
+    /// </summary>
+    private void UpdateCocoAnimation(float rotation)
+    {
+        if (cocoPlayer == null) return;
+
+        // 절대값 기준으로 상태 결정
+        float absRotation = Mathf.Abs(rotation);
+
+        int animState;
+        if (absRotation < 12.5f) // 0~12.5도
+        {
+            animState = 0; // run0
+        }
+        else if (absRotation < 37.5f) // 12.5~37.5도 (25도 중심)
+        {
+            animState = 1; // run1
+        }
+        else if (absRotation < 62.5f) // 37.5~62.5도 (50도 중심)
+        {
+            animState = 2; // run2
+        }
+        else // 62.5도 이상 (75도 중심)
+        {
+            animState = 3; // run3
+        }
+
+        cocoPlayer.SetState(animState);
     }
 
     /// <summary>

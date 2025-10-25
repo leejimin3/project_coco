@@ -184,7 +184,7 @@ public class ObstacleSpawnManager : MonoBehaviour
         Obstacle obstacleComponent = obstacle.GetComponent<Obstacle>();
         if (obstacleComponent != null)
         {
-            obstacleComponent.impactRotation = selectedData.weight * 10f; // 무게를 충격강도로 변환 (weight 1 = 10도)
+            obstacleComponent.impactRotation = selectedData.weight; // weight 값 = 회전각(도)
         }
 
         // 물결 효과 데이터 생성
