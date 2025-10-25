@@ -1,0 +1,2028 @@
+fileFormatVersion: 2
+guid: 0c9633cd7321a48dfb92febcce51c78b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4833701447564273133
+    second: D7_Wave_0
+  - first:
+      213: -5529275703942496697
+    second: D7_Wave_1
+  - first:
+      213: 4362445439530228943
+    second: D7_Wave_2
+  - first:
+      213: -8911163801694124721
+    second: D7_Wave_3
+  - first:
+      213: -8171544915528030360
+    second: D7_Wave_4
+  - first:
+      213: 1003455944412194168
+    second: D7_Wave_5
+  - first:
+      213: 3838643638742585977
+    second: D7_Wave_6
+  - first:
+      213: 4781333245612746864
+    second: D7_Wave_7
+  - first:
+      213: 3783700373559320082
+    second: D7_Wave_8
+  - first:
+      213: -906025019717756526
+    second: D7_Wave_9
+  - first:
+      213: 5817718082309455660
+    second: D7_Wave_10
+  - first:
+      213: 3044738977284493434
+    second: D7_Wave_11
+  - first:
+      213: 6962115351509645202
+    second: D7_Wave_12
+  - first:
+      213: -8284921981315625290
+    second: D7_Wave_13
+  - first:
+      213: 4526555921027615375
+    second: D7_Wave_14
+  - first:
+      213: -990474406299681929
+    second: D7_Wave_15
+  - first:
+      213: 6425220098409333908
+    second: D7_Wave_16
+  - first:
+      213: -5932238177243065252
+    second: D7_Wave_17
+  - first:
+      213: 5355314099723011890
+    second: D7_Wave_18
+  - first:
+      213: -8125448209304790307
+    second: D7_Wave_19
+  - first:
+      213: -796670814129668664
+    second: D7_Wave_20
+  - first:
+      213: -7920529267466424714
+    second: D7_Wave_21
+  - first:
+      213: -536526965571282848
+    second: D7_Wave_22
+  - first:
+      213: -1991097973504472560
+    second: D7_Wave_23
+  - first:
+      213: 7540901552170235359
+    second: D7_Wave_24
+  - first:
+      213: -4242785946969107959
+    second: D7_Wave_25
+  - first:
+      213: -4766778261321581320
+    second: D7_Wave_26
+  - first:
+      213: 766429981125204528
+    second: D7_Wave_27
+  - first:
+      213: 4935519519417123258
+    second: D7_Wave_28
+  - first:
+      213: -5107405420965764184
+    second: D7_Wave_29
+  - first:
+      213: 3317812511784299150
+    second: D7_Wave_30
+  - first:
+      213: 8065017467846521604
+    second: D7_Wave_31
+  - first:
+      213: -7806731366859301388
+    second: D7_Wave_32
+  - first:
+      213: 5288045699637109571
+    second: D7_Wave_33
+  - first:
+      213: 3034831298410933052
+    second: D7_Wave_34
+  - first:
+      213: 9143709256128324315
+    second: D7_Wave_35
+  - first:
+      213: -3033413973782035283
+    second: D7_Wave_36
+  - first:
+      213: -3317076379472309957
+    second: D7_Wave_37
+  - first:
+      213: -6961969203195863043
+    second: D7_Wave_38
+  - first:
+      213: 4510913016668184787
+    second: D7_Wave_39
+  - first:
+      213: 2309890762539698644
+    second: D7_Wave_40
+  - first:
+      213: 7941470670246285777
+    second: D7_Wave_41
+  - first:
+      213: -4487966932638559471
+    second: D7_Wave_42
+  - first:
+      213: 656191314270313262
+    second: D7_Wave_43
+  - first:
+      213: -7727664308937047993
+    second: D7_Wave_44
+  - first:
+      213: -5643185874428978124
+    second: D7_Wave_45
+  - first:
+      213: 4452148548219222454
+    second: D7_Wave_46
+  - first:
+      213: -8582805298814525414
+    second: D7_Wave_47
+  - first:
+      213: 9108006512316069898
+    second: D7_Wave_48
+  - first:
+      213: -8464319626222943837
+    second: D7_Wave_49
+  - first:
+      213: -5221171008595391833
+    second: D7_Wave_50
+  - first:
+      213: 1334833306533696493
+    second: D7_Wave_51
+  - first:
+      213: 9123505422245701651
+    second: D7_Wave_52
+  - first:
+      213: 9125295336952004763
+    second: D7_Wave_53
+  - first:
+      213: 4563414825557701244
+    second: D7_Wave_54
+  - first:
+      213: -1154178526709474145
+    second: D7_Wave_55
+  - first:
+      213: 5157240211968627522
+    second: D7_Wave_56
+  - first:
+      213: 2968648564603349645
+    second: D7_Wave_57
+  - first:
+      213: 3011771213296599540
+    second: D7_Wave_58
+  - first:
+      213: -8027235988124973507
+    second: D7_Wave_59
+  - first:
+      213: -8831755676359733345
+    second: D7_Wave_60
+  - first:
+      213: 4662308179493683557
+    second: D7_Wave_61
+  - first:
+      213: -6631889794331719905
+    second: D7_Wave_62
+  - first:
+      213: -4800484301331398344
+    second: D7_Wave_63
+  - first:
+      213: -9148337268453344953
+    second: D7_Wave_64
+  - first:
+      213: 8163846912079546723
+    second: D7_Wave_65
+  - first:
+      213: 2646586767337684757
+    second: D7_Wave_66
+  - first:
+      213: 259188811047869007
+    second: D7_Wave_67
+  - first:
+      213: -5856737608107751779
+    second: D7_Wave_68
+  - first:
+      213: -5116384703600334280
+    second: D7_Wave_69
+  - first:
+      213: -922878858138467801
+    second: D7_Wave_70
+  - first:
+      213: -864353973368035709
+    second: D7_Wave_71
+  - first:
+      213: 2994059499018830866
+    second: D7_Wave_72
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: D7_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 230
+        width: 181
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de52c544bd1c41340800000000000000
+      internalID: 4833701447564273133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 3713
+        y: 216
+        width: 99
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e3f49ea011443b0800000000000000
+      internalID: -5529275703942496697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 168
+        width: 412
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fccd83793058a8c30800000000000000
+      internalID: 4362445439530228943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 186
+        width: 48
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45c3b85cbf255480800000000000000
+      internalID: -8911163801694124721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_4
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 186
+        width: 150
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8676dcba137d89e80800000000000000
+      internalID: -8171544915528030360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_5
+      rect:
+        serializedVersion: 2
+        x: 2787
+        y: 184
+        width: 184
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875617a6dddfced00800000000000000
+      internalID: 1003455944412194168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_6
+      rect:
+        serializedVersion: 2
+        x: 3312
+        y: 199
+        width: 174
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972909a2d0a954530800000000000000
+      internalID: 3838643638742585977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_7
+      rect:
+        serializedVersion: 2
+        x: 3748
+        y: 203
+        width: 55
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07863891145ba5240800000000000000
+      internalID: 4781333245612746864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_8
+      rect:
+        serializedVersion: 2
+        x: 3864
+        y: 165
+        width: 298
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e148e5177628430800000000000000
+      internalID: 3783700373559320082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_9
+      rect:
+        serializedVersion: 2
+        x: 4397
+        y: 201
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2995b1e7b072d63f0800000000000000
+      internalID: -906025019717756526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_10
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 179
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ffb63b5cfacb050800000000000000
+      internalID: 5817718082309455660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_11
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 169
+        width: 184
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7014d6d7f5114a20800000000000000
+      internalID: 3044738977284493434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_12
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 167
+        width: 210
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297b60c76076e9060800000000000000
+      internalID: 6962115351509645202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_13
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 165
+        width: 104
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be4bd77a5b060d80800000000000000
+      internalID: -8284921981315625290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_14
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 189
+        width: 79
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8acac0a0ae81de30800000000000000
+      internalID: 4526555921027615375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_15
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 176
+        width: 63
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b346576c02142f0800000000000000
+      internalID: -990474406299681929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_16
+      rect:
+        serializedVersion: 2
+        x: 4658
+        y: 169
+        width: 293
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494836123a7fa2950800000000000000
+      internalID: 6425220098409333908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_17
+      rect:
+        serializedVersion: 2
+        x: 4977
+        y: 175
+        width: 94
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c549a62eec47cada0800000000000000
+      internalID: -5932238177243065252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_18
+      rect:
+        serializedVersion: 2
+        x: 5480
+        y: 164
+        width: 181
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23781aeccc5e15a40800000000000000
+      internalID: 5355314099723011890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_19
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 170
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddadd8377eb9c3f80800000000000000
+      internalID: -8125448209304790307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_20
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 169
+        width: 104
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cd31e09d18a1f4f0800000000000000
+      internalID: -796670814129668664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_21
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 149
+        width: 157
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e24939890a41290800000000000000
+      internalID: -7920529267466424714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_22
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 172
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06894b4419fdd88f0800000000000000
+      internalID: -536526965571282848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_23
+      rect:
+        serializedVersion: 2
+        x: 3976
+        y: 153
+        width: 112
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a044041f23e54e0800000000000000
+      internalID: -1991097973504472560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_24
+      rect:
+        serializedVersion: 2
+        x: 4201
+        y: 170
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd57c4f120aa6a860800000000000000
+      internalID: 7540901552170235359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_25
+      rect:
+        serializedVersion: 2
+        x: 4451
+        y: 156
+        width: 180
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90213e419a89e15c0800000000000000
+      internalID: -4242785946969107959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_26
+      rect:
+        serializedVersion: 2
+        x: 4745
+        y: 155
+        width: 125
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc7fd24d6009ddb0800000000000000
+      internalID: -4766778261321581320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_27
+      rect:
+        serializedVersion: 2
+        x: 4861
+        y: 142
+        width: 212
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a5d22d108e2aa00800000000000000
+      internalID: 766429981125204528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_28
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 145
+        width: 129
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab14dd87adc7e7440800000000000000
+      internalID: 4935519519417123258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_29
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 125
+        width: 366
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a36e6f64d9de19b0800000000000000
+      internalID: -5107405420965764184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_30
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 155
+        width: 151
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8aef34a6ec3b0e20800000000000000
+      internalID: 3317812511784299150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_31
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 142
+        width: 69
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403ff4e18a2bcef60800000000000000
+      internalID: 8065017467846521604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_32
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 151
+        width: 75
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd93750f2be8a390800000000000000
+      internalID: -7806731366859301388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_33
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 127
+        width: 239
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343e6eaeb89e26940800000000000000
+      internalID: 5288045699637109571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_34
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 124
+        width: 91
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b65079cf2ed1a20800000000000000
+      internalID: 3034831298410933052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_35
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 134
+        width: 91
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2eafc7f1bf4ee70800000000000000
+      internalID: 9143709256128324315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_36
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 110
+        width: 360
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da40404001627e5d0800000000000000
+      internalID: -3033413973782035283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_37
+      rect:
+        serializedVersion: 2
+        x: 4017
+        y: 137
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31d6b48b9067f1d0800000000000000
+      internalID: -3317076379472309957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_38
+      rect:
+        serializedVersion: 2
+        x: 5218
+        y: 130
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff1d4255ed126f90800000000000000
+      internalID: -6961969203195863043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_39
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 112
+        width: 67
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d061332d7bf99e30800000000000000
+      internalID: 4510913016668184787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_40
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 117
+        width: 127
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9822309616e0020800000000000000
+      internalID: 2309890762539698644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_41
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 87
+        width: 174
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d19636bf75c53e60800000000000000
+      internalID: 7941470670246285777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_42
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 92
+        width: 176
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11311606ad987b1c0800000000000000
+      internalID: -4487966932638559471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_43
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 100
+        width: 297
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b57cf06824b1900800000000000000
+      internalID: 656191314270313262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_44
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 114
+        width: 85
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740c7520142d1c490800000000000000
+      internalID: -7727664308937047993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_45
+      rect:
+        serializedVersion: 2
+        x: 3232
+        y: 101
+        width: 241
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c982998506fa1b0800000000000000
+      internalID: -5643185874428978124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_46
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 104
+        width: 133
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9b0ef148539cd30800000000000000
+      internalID: 4452148548219222454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_47
+      rect:
+        serializedVersion: 2
+        x: 3599
+        y: 119
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10e1dbed00c3e880800000000000000
+      internalID: -8582805298814525414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_48
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 105
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a083b8aaaa3266e70800000000000000
+      internalID: 9108006512316069898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 233
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a14d955522b88a80800000000000000
+      internalID: -8464319626222943837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_50
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 75
+        width: 121
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa8a1171acaa87b0800000000000000
+      internalID: -5221171008595391833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_51
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 82
+        width: 74
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de31d4ee1d7468210800000000000000
+      internalID: 1334833306533696493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_52
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 83
+        width: 169
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3182e47d7d33d9e70800000000000000
+      internalID: 9123505422245701651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_53
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 53
+        width: 262
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b908d85d2cf83ae70800000000000000
+      internalID: 9125295336952004763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_54
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 94
+        width: 45
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c723e181b91845f30800000000000000
+      internalID: 4563414825557701244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_55
+      rect:
+        serializedVersion: 2
+        x: 5288
+        y: 87
+        width: 184
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c191cbeb88bffe0800000000000000
+      internalID: -1154178526709474145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_56
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 41
+        width: 199
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24310c706a2329740800000000000000
+      internalID: 5157240211968627522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_57
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 50
+        width: 210
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ae7241422c23920800000000000000
+      internalID: 2968648564603349645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_58
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 55
+        width: 95
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f18a4126f5fbc920800000000000000
+      internalID: 3011771213296599540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_59
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 31
+        width: 357
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36449f1667899090800000000000000
+      internalID: -8027235988124973507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_60
+      rect:
+        serializedVersion: 2
+        x: 2533
+        y: 62
+        width: 192
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9fc987410d4f6580800000000000000
+      internalID: -8831755676359733345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_61
+      rect:
+        serializedVersion: 2
+        x: 3306
+        y: 24
+        width: 269
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5618e185698d3b040800000000000000
+      internalID: 4662308179493683557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_62
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 32
+        width: 179
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17c15b8e5bc6f3a0800000000000000
+      internalID: -6631889794331719905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_63
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 44
+        width: 57
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8318d4546f0416db0800000000000000
+      internalID: -4800484301331398344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_64
+      rect:
+        serializedVersion: 2
+        x: 4290
+        y: 30
+        width: 438
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749fe5c69b39a0180800000000000000
+      internalID: -9148337268453344953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_65
+      rect:
+        serializedVersion: 2
+        x: 4791
+        y: 34
+        width: 213
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369cb2b338fcb4170800000000000000
+      internalID: 8163846912079546723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_66
+      rect:
+        serializedVersion: 2
+        x: 5285
+        y: 50
+        width: 147
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f796684a09ab420800000000000000
+      internalID: 2646586767337684757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_67
+      rect:
+        serializedVersion: 2
+        x: 5377
+        y: 42
+        width: 247
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a9344b9d2d89300800000000000000
+      internalID: 259188811047869007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_68
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 219
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96011efc20b8bea0800000000000000
+      internalID: -5856737608107751779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_69
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 20
+        width: 175
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ae8a74833fef8b0800000000000000
+      internalID: -5116384703600334280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_70
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 30
+        width: 137
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72240f171964133f0800000000000000
+      internalID: -922878858138467801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_71
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 38
+        width: 126
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386633904a23104f0800000000000000
+      internalID: -864353973368035709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D7_Wave_72
+      rect:
+        serializedVersion: 2
+        x: 3575
+        y: 21
+        width: 122
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214c66b40490d8920800000000000000
+      internalID: 2994059499018830866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      D7_Wave_0: 4833701447564273133
+      D7_Wave_1: -5529275703942496697
+      D7_Wave_10: 5817718082309455660
+      D7_Wave_11: 3044738977284493434
+      D7_Wave_12: 6962115351509645202
+      D7_Wave_13: -8284921981315625290
+      D7_Wave_14: 4526555921027615375
+      D7_Wave_15: -990474406299681929
+      D7_Wave_16: 6425220098409333908
+      D7_Wave_17: -5932238177243065252
+      D7_Wave_18: 5355314099723011890
+      D7_Wave_19: -8125448209304790307
+      D7_Wave_2: 4362445439530228943
+      D7_Wave_20: -796670814129668664
+      D7_Wave_21: -7920529267466424714
+      D7_Wave_22: -536526965571282848
+      D7_Wave_23: -1991097973504472560
+      D7_Wave_24: 7540901552170235359
+      D7_Wave_25: -4242785946969107959
+      D7_Wave_26: -4766778261321581320
+      D7_Wave_27: 766429981125204528
+      D7_Wave_28: 4935519519417123258
+      D7_Wave_29: -5107405420965764184
+      D7_Wave_3: -8911163801694124721
+      D7_Wave_30: 3317812511784299150
+      D7_Wave_31: 8065017467846521604
+      D7_Wave_32: -7806731366859301388
+      D7_Wave_33: 5288045699637109571
+      D7_Wave_34: 3034831298410933052
+      D7_Wave_35: 9143709256128324315
+      D7_Wave_36: -3033413973782035283
+      D7_Wave_37: -3317076379472309957
+      D7_Wave_38: -6961969203195863043
+      D7_Wave_39: 4510913016668184787
+      D7_Wave_4: -8171544915528030360
+      D7_Wave_40: 2309890762539698644
+      D7_Wave_41: 7941470670246285777
+      D7_Wave_42: -4487966932638559471
+      D7_Wave_43: 656191314270313262
+      D7_Wave_44: -7727664308937047993
+      D7_Wave_45: -5643185874428978124
+      D7_Wave_46: 4452148548219222454
+      D7_Wave_47: -8582805298814525414
+      D7_Wave_48: 9108006512316069898
+      D7_Wave_49: -8464319626222943837
+      D7_Wave_5: 1003455944412194168
+      D7_Wave_50: -5221171008595391833
+      D7_Wave_51: 1334833306533696493
+      D7_Wave_52: 9123505422245701651
+      D7_Wave_53: 9125295336952004763
+      D7_Wave_54: 4563414825557701244
+      D7_Wave_55: -1154178526709474145
+      D7_Wave_56: 5157240211968627522
+      D7_Wave_57: 2968648564603349645
+      D7_Wave_58: 3011771213296599540
+      D7_Wave_59: -8027235988124973507
+      D7_Wave_6: 3838643638742585977
+      D7_Wave_60: -8831755676359733345
+      D7_Wave_61: 4662308179493683557
+      D7_Wave_62: -6631889794331719905
+      D7_Wave_63: -4800484301331398344
+      D7_Wave_64: -9148337268453344953
+      D7_Wave_65: 8163846912079546723
+      D7_Wave_66: 2646586767337684757
+      D7_Wave_67: 259188811047869007
+      D7_Wave_68: -5856737608107751779
+      D7_Wave_69: -5116384703600334280
+      D7_Wave_7: 4781333245612746864
+      D7_Wave_70: -922878858138467801
+      D7_Wave_71: -864353973368035709
+      D7_Wave_72: 2994059499018830866
+      D7_Wave_8: 3783700373559320082
+      D7_Wave_9: -906025019717756526
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

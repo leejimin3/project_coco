@@ -1,0 +1,1950 @@
+fileFormatVersion: 2
+guid: 1b19a26c8898b4cf394407b3ee3c373d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5282128751592443
+    second: c7_Wave_0
+  - first:
+      213: 8320663667355598445
+    second: c7_Wave_1
+  - first:
+      213: 2522067900062800313
+    second: c7_Wave_2
+  - first:
+      213: -593458356154662087
+    second: c7_Wave_3
+  - first:
+      213: -5359755924946997431
+    second: c7_Wave_4
+  - first:
+      213: -4735552888165658194
+    second: c7_Wave_5
+  - first:
+      213: -7169936753151997848
+    second: c7_Wave_6
+  - first:
+      213: -5446049312184280723
+    second: c7_Wave_7
+  - first:
+      213: -6279792129616190700
+    second: c7_Wave_8
+  - first:
+      213: -4670835019295642225
+    second: c7_Wave_9
+  - first:
+      213: 6285047851547979539
+    second: c7_Wave_10
+  - first:
+      213: 2484599717729885395
+    second: c7_Wave_11
+  - first:
+      213: 3220033631513770752
+    second: c7_Wave_12
+  - first:
+      213: -4558801862673035465
+    second: c7_Wave_13
+  - first:
+      213: 1734820701312064573
+    second: c7_Wave_14
+  - first:
+      213: -6246532091812584470
+    second: c7_Wave_15
+  - first:
+      213: 4677972570406909318
+    second: c7_Wave_16
+  - first:
+      213: -6424040831835824126
+    second: c7_Wave_17
+  - first:
+      213: 6304924733336462078
+    second: c7_Wave_18
+  - first:
+      213: 1648198486755366841
+    second: c7_Wave_19
+  - first:
+      213: -6516640363530333196
+    second: c7_Wave_20
+  - first:
+      213: -5360206467434033829
+    second: c7_Wave_21
+  - first:
+      213: -1503172394648075846
+    second: c7_Wave_22
+  - first:
+      213: -4651468298588728978
+    second: c7_Wave_23
+  - first:
+      213: 4431092996509168156
+    second: c7_Wave_24
+  - first:
+      213: -1438963422249070618
+    second: c7_Wave_25
+  - first:
+      213: -3117263257757785838
+    second: c7_Wave_26
+  - first:
+      213: 3047411901608702606
+    second: c7_Wave_27
+  - first:
+      213: 7310783765408499530
+    second: c7_Wave_28
+  - first:
+      213: -1076084376325232941
+    second: c7_Wave_29
+  - first:
+      213: -6463415072616460327
+    second: c7_Wave_30
+  - first:
+      213: 400447818992707932
+    second: c7_Wave_31
+  - first:
+      213: -162961388945400821
+    second: c7_Wave_32
+  - first:
+      213: 4919649887297999443
+    second: c7_Wave_33
+  - first:
+      213: -2464478370253379292
+    second: c7_Wave_34
+  - first:
+      213: 8586474834668319795
+    second: c7_Wave_35
+  - first:
+      213: -284335818418261227
+    second: c7_Wave_36
+  - first:
+      213: -8479764187655068742
+    second: c7_Wave_37
+  - first:
+      213: 8405866406293505001
+    second: c7_Wave_38
+  - first:
+      213: 6215431433463049325
+    second: c7_Wave_39
+  - first:
+      213: 2970819898685186644
+    second: c7_Wave_40
+  - first:
+      213: -2767152684058997448
+    second: c7_Wave_41
+  - first:
+      213: 8644004512497886412
+    second: c7_Wave_42
+  - first:
+      213: 6360889667303861668
+    second: c7_Wave_43
+  - first:
+      213: 3352775260520137449
+    second: c7_Wave_44
+  - first:
+      213: 5467549383132429790
+    second: c7_Wave_45
+  - first:
+      213: 2382548469617352636
+    second: c7_Wave_46
+  - first:
+      213: 6474114616166391228
+    second: c7_Wave_47
+  - first:
+      213: -3500856826681773149
+    second: c7_Wave_48
+  - first:
+      213: -532891091825310935
+    second: c7_Wave_49
+  - first:
+      213: -6122858729898365645
+    second: c7_Wave_50
+  - first:
+      213: -3187342656625339874
+    second: c7_Wave_51
+  - first:
+      213: -2728524812229066833
+    second: c7_Wave_52
+  - first:
+      213: 833612904507151886
+    second: c7_Wave_53
+  - first:
+      213: 2989944872655281629
+    second: c7_Wave_54
+  - first:
+      213: 4140099341538444469
+    second: c7_Wave_55
+  - first:
+      213: 5926726102808440550
+    second: c7_Wave_56
+  - first:
+      213: -1184115509426272671
+    second: c7_Wave_57
+  - first:
+      213: -6571751990879896687
+    second: c7_Wave_58
+  - first:
+      213: -6991097585344456710
+    second: c7_Wave_59
+  - first:
+      213: -6769604487470769251
+    second: c7_Wave_60
+  - first:
+      213: -2676127897141666742
+    second: c7_Wave_61
+  - first:
+      213: -5569306774984301099
+    second: c7_Wave_62
+  - first:
+      213: 4299126066562058955
+    second: c7_Wave_63
+  - first:
+      213: -869389319415035432
+    second: c7_Wave_64
+  - first:
+      213: 3817741925298666428
+    second: c7_Wave_65
+  - first:
+      213: -1134459794096912100
+    second: c7_Wave_66
+  - first:
+      213: 5990129351449290366
+    second: c7_Wave_67
+  - first:
+      213: 4084089877059709084
+    second: c7_Wave_68
+  - first:
+      213: 7733540195108782323
+    second: c7_Wave_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: c7_Wave_0
+      rect:
+        serializedVersion: 2
+        x: 2721
+        y: 188
+        width: 180
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c7a109eeb3deff0800000000000000
+      internalID: -5282128751592443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_1
+      rect:
+        serializedVersion: 2
+        x: 3398
+        y: 209
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6eba3c458fe87370800000000000000
+      internalID: 8320663667355598445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_2
+      rect:
+        serializedVersion: 2
+        x: 3438
+        y: 211
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b998a2846f200320800000000000000
+      internalID: 2522067900062800313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 194
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9330a64f4cc93c7f0800000000000000
+      internalID: -593458356154662087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_4
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 188
+        width: 62
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f2dba22625e95b0800000000000000
+      internalID: -5359755924946997431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_5
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 180
+        width: 44
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea19fcdfcbfe74eb0800000000000000
+      internalID: -4735552888165658194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_6
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 181
+        width: 81
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8688b5ec2844f7c90800000000000000
+      internalID: -7169936753151997848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_7
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 189
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69def5410fbb64b0800000000000000
+      internalID: -5446049312184280723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_8
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 175
+        width: 246
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413eee27452b9d8a0800000000000000
+      internalID: -6279792129616190700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_9
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 175
+        width: 182
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8dad6e0c4cdd2fb0800000000000000
+      internalID: -4670835019295642225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_10
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 172
+        width: 161
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f69dba8b9f83750800000000000000
+      internalID: 6285047851547979539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_11
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 182
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc535087421b7220800000000000000
+      internalID: 2484599717729885395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_12
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 178
+        width: 254
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b7033078bdfac20800000000000000
+      internalID: 3220033631513770752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_13
+      rect:
+        serializedVersion: 2
+        x: 2842
+        y: 184
+        width: 86
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f0cf50cd1ebb0c0800000000000000
+      internalID: -4558801862673035465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_14
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 174
+        width: 90
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c13b28c32531810800000000000000
+      internalID: 1734820701312064573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_15
+      rect:
+        serializedVersion: 2
+        x: 3876
+        y: 181
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3ee65782cdf49a0800000000000000
+      internalID: -6246532091812584470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_16
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 164
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685ff10944f7be040800000000000000
+      internalID: 4677972570406909318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_17
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 162
+        width: 173
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20022d346e839d6a0800000000000000
+      internalID: -6424040831835824126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_18
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 169
+        width: 66
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2281ad3a79f7750800000000000000
+      internalID: 6304924733336462078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_19
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 162
+        width: 43
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7d36a8ac39fd610800000000000000
+      internalID: 1648198486755366841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_20
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 162
+        width: 55
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f35dc2bd1e3095a0800000000000000
+      internalID: -6516640363530333196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_21
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 173
+        width: 72
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dc7d11e98bc95b0800000000000000
+      internalID: -5360206467434033829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_22
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 156
+        width: 108
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab104d4dba8a32be0800000000000000
+      internalID: -1503172394648075846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_23
+      rect:
+        serializedVersion: 2
+        x: 3913
+        y: 167
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61d0aa1a3aa27fb0800000000000000
+      internalID: -4651468298588728978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_24
+      rect:
+        serializedVersion: 2
+        x: 4013
+        y: 163
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1276a77a976e7d30800000000000000
+      internalID: 4431092996509168156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_25
+      rect:
+        serializedVersion: 2
+        x: 4039
+        y: 157
+        width: 327
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef40143466c70ce0800000000000000
+      internalID: -1438963422249070618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_26
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 155
+        width: 57
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21168f145914db4d0800000000000000
+      internalID: -3117263257757785838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_27
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 145
+        width: 69
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e823fa78af49a4a20800000000000000
+      internalID: 3047411901608702606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_28
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 155
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47cdd6b91f157560800000000000000
+      internalID: 7310783765408499530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_29
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 139
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d669c806faf011f0800000000000000
+      internalID: -1076084376325232941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_30
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 133
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df4ac07c365d46a0800000000000000
+      internalID: -6463415072616460327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_31
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 118
+        width: 438
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59e3227b2dae8500800000000000000
+      internalID: 400447818992707932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_32
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 134
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c1ecbea7b0dbdf0800000000000000
+      internalID: -162961388945400821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_33
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 97
+        width: 330
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35210bfc18b164440800000000000000
+      internalID: 4919649887297999443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_34
+      rect:
+        serializedVersion: 2
+        x: 3254
+        y: 128
+        width: 97
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429e968caf96ccdd0800000000000000
+      internalID: -2464478370253379292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 93
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3347c397e59492770800000000000000
+      internalID: 8586474834668319795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_36
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 117
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51372426416dd0cf0800000000000000
+      internalID: -284335818418261227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_37
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 126
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3adb72663d15a80800000000000000
+      internalID: -8479764187655068742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_38
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 116
+        width: 111
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e38388d5f2a7a470800000000000000
+      internalID: 8405866406293505001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_39
+      rect:
+        serializedVersion: 2
+        x: 3513
+        y: 120
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6cac5d35f5a14650800000000000000
+      internalID: 6215431433463049325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_40
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 124
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452eac035f87a3920800000000000000
+      internalID: 2970819898685186644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_41
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 80
+        width: 235
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d056b7b491999d0800000000000000
+      internalID: -2767152684058997448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_42
+      rect:
+        serializedVersion: 2
+        x: 3518
+        y: 110
+        width: 42
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc46f446e4ca5f770800000000000000
+      internalID: 8644004512497886412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_43
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 103
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad6913737b664850800000000000000
+      internalID: 6360889667303861668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_44
+      rect:
+        serializedVersion: 2
+        x: 3706
+        y: 100
+        width: 93
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2450fe553778e20800000000000000
+      internalID: 3352775260520137449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_45
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 96
+        width: 218
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddb3851233a0eb40800000000000000
+      internalID: 5467549383132429790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_46
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 109
+        width: 52
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf51b7b533801120800000000000000
+      internalID: 2382548469617352636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_47
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 89
+        width: 90
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd13cb21fca8d950800000000000000
+      internalID: 6474114616166391228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_48
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 68
+        width: 109
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3b124b3457a6fc0800000000000000
+      internalID: -3500856826681773149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_49
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 78
+        width: 53
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92348c7106aca98f0800000000000000
+      internalID: -532891091825310935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_50
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 66
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d228aec6c370ba0800000000000000
+      internalID: -6122858729898365645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_51
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 67
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e129566bdb844c3d0800000000000000
+      internalID: -3187342656625339874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_52
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 54
+        width: 231
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf3f3eb325522ad0800000000000000
+      internalID: -2728524812229066833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_53
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 43
+        width: 115
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06945d1586919b00800000000000000
+      internalID: 833612904507151886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_54
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 30
+        width: 356
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd5e90350b6e7920800000000000000
+      internalID: 2989944872655281629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_55
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 58
+        width: 71
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b44a3b7a66947930800000000000000
+      internalID: 4140099341538444469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_56
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 58
+        width: 94
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eeaee64df5ff3250800000000000000
+      internalID: 5926726102808440550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_57
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 48
+        width: 67
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166cd97c73d219fe0800000000000000
+      internalID: -1184115509426272671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_58
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 41
+        width: 281
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b33a702627cc4a0800000000000000
+      internalID: -6571751990879896687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_59
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 47
+        width: 165
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7d37b59c1aafe90800000000000000
+      internalID: -6991097585344456710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_60
+      rect:
+        serializedVersion: 2
+        x: 4275
+        y: 42
+        width: 77
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b1a66e5988d02a0800000000000000
+      internalID: -6769604487470769251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_61
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 30
+        width: 81
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c9b553bdb7cdad0800000000000000
+      internalID: -2676127897141666742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 20
+        width: 246
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d562efdef8d5b2b0800000000000000
+      internalID: -5569306774984301099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_63
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 16
+        width: 262
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcacd0a316099ab30800000000000000
+      internalID: 4299126066562058955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_64
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 30
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d98fbc250f4fe3f0800000000000000
+      internalID: -869389319415035432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_65
+      rect:
+        serializedVersion: 2
+        x: 3246
+        y: 44
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbfa85cd085bf430800000000000000
+      internalID: 3817741925298666428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_66
+      rect:
+        serializedVersion: 2
+        x: 4007
+        y: 20
+        width: 320
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1904e0f3d69140f0800000000000000
+      internalID: -1134459794096912100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_67
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 7
+        width: 172
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76a6c778e6312350800000000000000
+      internalID: 5990129351449290366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_68
+      rect:
+        serializedVersion: 2
+        x: 3323
+        y: 0
+        width: 207
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98a9e0da1a9da830800000000000000
+      internalID: 4084089877059709084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: c7_Wave_69
+      rect:
+        serializedVersion: 2
+        x: 3644
+        y: 0
+        width: 265
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f00aa955dd035b60800000000000000
+      internalID: 7733540195108782323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      c7_Wave_0: -5282128751592443
+      c7_Wave_1: 8320663667355598445
+      c7_Wave_10: 6285047851547979539
+      c7_Wave_11: 2484599717729885395
+      c7_Wave_12: 3220033631513770752
+      c7_Wave_13: -4558801862673035465
+      c7_Wave_14: 1734820701312064573
+      c7_Wave_15: -6246532091812584470
+      c7_Wave_16: 4677972570406909318
+      c7_Wave_17: -6424040831835824126
+      c7_Wave_18: 6304924733336462078
+      c7_Wave_19: 1648198486755366841
+      c7_Wave_2: 2522067900062800313
+      c7_Wave_20: -6516640363530333196
+      c7_Wave_21: -5360206467434033829
+      c7_Wave_22: -1503172394648075846
+      c7_Wave_23: -4651468298588728978
+      c7_Wave_24: 4431092996509168156
+      c7_Wave_25: -1438963422249070618
+      c7_Wave_26: -3117263257757785838
+      c7_Wave_27: 3047411901608702606
+      c7_Wave_28: 7310783765408499530
+      c7_Wave_29: -1076084376325232941
+      c7_Wave_3: -593458356154662087
+      c7_Wave_30: -6463415072616460327
+      c7_Wave_31: 400447818992707932
+      c7_Wave_32: -162961388945400821
+      c7_Wave_33: 4919649887297999443
+      c7_Wave_34: -2464478370253379292
+      c7_Wave_35: 8586474834668319795
+      c7_Wave_36: -284335818418261227
+      c7_Wave_37: -8479764187655068742
+      c7_Wave_38: 8405866406293505001
+      c7_Wave_39: 6215431433463049325
+      c7_Wave_4: -5359755924946997431
+      c7_Wave_40: 2970819898685186644
+      c7_Wave_41: -2767152684058997448
+      c7_Wave_42: 8644004512497886412
+      c7_Wave_43: 6360889667303861668
+      c7_Wave_44: 3352775260520137449
+      c7_Wave_45: 5467549383132429790
+      c7_Wave_46: 2382548469617352636
+      c7_Wave_47: 6474114616166391228
+      c7_Wave_48: -3500856826681773149
+      c7_Wave_49: -532891091825310935
+      c7_Wave_5: -4735552888165658194
+      c7_Wave_50: -6122858729898365645
+      c7_Wave_51: -3187342656625339874
+      c7_Wave_52: -2728524812229066833
+      c7_Wave_53: 833612904507151886
+      c7_Wave_54: 2989944872655281629
+      c7_Wave_55: 4140099341538444469
+      c7_Wave_56: 5926726102808440550
+      c7_Wave_57: -1184115509426272671
+      c7_Wave_58: -6571751990879896687
+      c7_Wave_59: -6991097585344456710
+      c7_Wave_6: -7169936753151997848
+      c7_Wave_60: -6769604487470769251
+      c7_Wave_61: -2676127897141666742
+      c7_Wave_62: -5569306774984301099
+      c7_Wave_63: 4299126066562058955
+      c7_Wave_64: -869389319415035432
+      c7_Wave_65: 3817741925298666428
+      c7_Wave_66: -1134459794096912100
+      c7_Wave_67: 5990129351449290366
+      c7_Wave_68: 4084089877059709084
+      c7_Wave_69: 7733540195108782323
+      c7_Wave_7: -5446049312184280723
+      c7_Wave_8: -6279792129616190700
+      c7_Wave_9: -4670835019295642225
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
