@@ -13,24 +13,16 @@ public class SkillButton : MonoBehaviour
 
     private bool bIsCoolDown = false;
     private Coroutine coolDownCoroutine;
-
-    private event Action SkillAction;
-    
     public KeyCode key;
     
     public TextMeshProUGUI keyText;
-    
-    public void SetSkill(Action callback)
-    {
-        SkillAction += callback;
-    }
 
     public void TryAttack()
     {
         if (bIsCoolDown)
             return;
-        
-        SkillAction?.Invoke();
+
+        //bool flag = GameManager.Instance.TryAttack(key);
         StartCoolDown();
     }
 

@@ -113,23 +113,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC6B8\uAE30\uD45C\uC815 \uCF54\uCF54 3_0"
+      name: Coco_3_2_0
       rect:
         serializedVersion: 2
-        x: 303
-        y: 279
-        width: 547
-        height: 469
+        x: 287
+        y: 334
+        width: 571
+        height: 429
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 56072760bac8e76d0800000000000000
-      internalID: -2990798436351971227
+      spriteID: 08176fd8c16eaac4b8b11da230122eea
+      internalID: -870206024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco_3_2_1
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 569
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa3a9c78dda5704a856501c6bad32f1
+      internalID: -1127287315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco_3_2_2
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 484
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3cdab957890764fb2ce5b998c64a40
+      internalID: -2126814310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coco_3_2_3
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 511
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde9ae7d08db99e40b30c2c5fd181a28
+      internalID: -518366834
       vertices: []
       indices: 
       edges: []
@@ -138,7 +204,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2771ad44644b16348b1cf1a0cb90697f
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +212,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "\uC6B8\uAE30\uD45C\uC815 \uCF54\uCF54 3_0": -2990798436351971227
+      Coco_3_2_0: -870206024
+      Coco_3_2_1: -1127287315
+      Coco_3_2_2: -2126814310
+      Coco_3_2_3: -518366834
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

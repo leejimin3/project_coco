@@ -35,6 +35,14 @@ public class GameManager : BaseSingleton<GameManager>
         OpenNextFriend();
     }
 
+    public void TryAttack(KeyCode key)
+    {
+        foreach (SkillButton skillButton in buttonList)
+        {
+            
+        }
+    }
+
     public void TryInput()
     {
         for (int i = 0; i < keys.Count; i++)
@@ -107,5 +115,19 @@ public class GameManager : BaseSingleton<GameManager>
         }
 
         slider.value = 1f; // 정확히 1로 맞추기
+    }
+
+    public List<KeyCode> GetRandomFriendsKeys(int count = 1)
+    {
+        List<KeyCode> keyList = this.keys;
+        List<KeyCode> returnKeyList = new List<KeyCode>();
+        
+        for (int i = 0; i < count; i++)
+        {
+            int ran = UnityEngine.Random.Range(0, keyList.Count);
+            returnKeyList.Add(keyList[ran]);   
+        }
+        
+        return returnKeyList;
     }
 }

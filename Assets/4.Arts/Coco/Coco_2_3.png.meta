@@ -125,111 +125,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_0"
+      name: Coco_2_3_0
       rect:
         serializedVersion: 2
-        x: 294
-        y: 282
-        width: 547
-        height: 469
+        x: 327
+        y: 272
+        width: 545
+        height: 467
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 73d390ad803a68c90800000000000000
-      internalID: -7167862498500461257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_1"
-      rect:
-        serializedVersion: 2
-        x: 867
-        y: 580
-        width: 22
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce99f4d1e35e8ea70800000000000000
-      internalID: 8856580722166569452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_2"
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 553
-        width: 37
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ba356e97ecce19a0800000000000000
-      internalID: -6260341136831464777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_3"
-      rect:
-        serializedVersion: 2
-        x: 890
-        y: 525
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3706b101b595e88c0800000000000000
-      internalID: -3995157571783925645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_4"
-      rect:
-        serializedVersion: 2
-        x: 842
-        y: 482
-        width: 43
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4005b9c30494c1410800000000000000
-      internalID: 1449113720350003204
+      spriteID: 900dc763067e62c4091abbcd52ba2a37
+      internalID: 987073320
       vertices: []
       indices: 
       edges: []
@@ -238,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f0b4f288928ccdc40878215a6f937612
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +158,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_0": -7167862498500461257
-      "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_1": 8856580722166569452
-      "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_2": -6260341136831464777
-      "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_3": -3995157571783925645
-      "\uC644\uC804 \uC6B8\uB294 \uCF54\uCF54 3_4": 1449113720350003204
+      Coco_2_3_0: 987073320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

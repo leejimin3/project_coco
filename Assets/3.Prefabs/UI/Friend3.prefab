@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Friend3
       objectReference: {fileID: 0}
+    - target: {fileID: 1487207061061371650, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487207061061371650, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 131
+      objectReference: {fileID: 0}
     - target: {fileID: 6613400116232642167, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -94,16 +102,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860431637015961407, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 273
+      value: 267
       objectReference: {fileID: 0}
     - target: {fileID: 6860431637015961407, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 321
+      value: 322
       objectReference: {fileID: 0}
     - target: {fileID: 6886038773495314073, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6531377693812717206, guid: 569f37fd839b0974badcbdeacd28aaa3, type: 3}
+      objectReference: {fileID: -5362292703166988329, guid: d370d8334e686054a88279fe23469469, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

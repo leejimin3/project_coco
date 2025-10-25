@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4968f9d597549a342bd2696ea1c46b65
+guid: d4904902ec5386a4dafe0a8afe668f6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4386885057361214512
-    second: "\u110F\u1169\u110F\u1169 \u1100\u1169\u110C\u1165\u11BC 1_0"
+      213: 3192161077676516526
+    second: Coco_0_1__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,11 +113,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u110F\u1169\u110F\u1169 \u1100\u1169\u110C\u1165\u11BC 1_0"
+      name: Coco_0_1__0
       rect:
         serializedVersion: 2
-        x: 270
-        y: 299
+        x: 310
+        y: 319
         width: 570
         height: 456
       alignment: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03cfb7a87b851ec30800000000000000
-      internalID: 4386885057361214512
+      spriteID: ea4acbc5695dc4c20800000000000000
+      internalID: 3192161077676516526
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u110F\u1169\u110F\u1169 \u1100\u1169\u110C\u1165\u11BC 1_0": 4386885057361214512
+      Coco_0_1__0: 3192161077676516526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

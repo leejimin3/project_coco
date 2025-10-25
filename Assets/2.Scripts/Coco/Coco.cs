@@ -16,28 +16,15 @@ public class Coco : MonoBehaviour
             Debug.LogError("코코 애니메이터 누락");
         }
     }
-    
-    private void Update()
-    {
-        TryTest();
-    }
 
     public void Actions()
     {
         Debug.Log("Action");
     }
 
-    private void TryTest()
+    public void SetState(int state)
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            runState++;
-            anim.SetInteger("State", runState);
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            runState--;
-            anim.SetInteger("State", runState);
-        }
+        runState = state;
+        anim.SetInteger("State", runState);
     }
 }

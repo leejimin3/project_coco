@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uAC71\uC815\uC2A4\uB7EC\uC6B4 \uD45C\uC8153_0"
+      name: Coco_1_3_0
       rect:
         serializedVersion: 2
-        x: 272
-        y: 313
-        width: 566
+        x: 285
+        y: 295
+        width: 564
         height: 442
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e0c676c2f02b1d250800000000000000
-      internalID: 5967746759481846798
+      spriteID: 7356bc29576ab224887cfe3445510b68
+      internalID: -1134310014
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 000247c26a03627408be2b52046618af
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +146,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "\uAC71\uC815\uC2A4\uB7EC\uC6B4 \uD45C\uC8153_0": 5967746759481846798
+      Coco_1_3_0: -1134310014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

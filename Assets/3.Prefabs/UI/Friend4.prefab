@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Friend4
       objectReference: {fileID: 0}
+    - target: {fileID: 1487207061061371650, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 113
+      objectReference: {fileID: 0}
     - target: {fileID: 6613400116232642167, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -94,16 +98,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860431637015961407, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 479
+      value: 291
       objectReference: {fileID: 0}
     - target: {fileID: 6860431637015961407, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 595
+      value: 368
       objectReference: {fileID: 0}
     - target: {fileID: 6886038773495314073, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6206486520325196025, guid: 76e9daeff4d5ebc4e809290c249932c8, type: 3}
+      objectReference: {fileID: 6507982653818034734, guid: d8e29771267857d429c0fc03a8adef99, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
