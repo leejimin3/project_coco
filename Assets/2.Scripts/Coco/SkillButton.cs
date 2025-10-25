@@ -48,10 +48,15 @@ public class SkillButton : MonoBehaviour
 
     public void StartReaction(bool flag)
     {
-        if (coolDownCoroutine != null)
-            StopCoroutine(coolDownCoroutine);
+        if (ReactionCoroutine != null)
+        {
+            StopCoroutine(ReactionCoroutine);
+            BodyImage.sprite = DefaultImage;
+            DimmedImage.sprite = DefaultImage;
+        }
+            
 
-        coolDownCoroutine = StartCoroutine(Reaction(flag));
+        ReactionCoroutine = StartCoroutine(Reaction(flag));
     }
 
     private IEnumerator Reaction(bool flag)
@@ -67,7 +72,7 @@ public class SkillButton : MonoBehaviour
             DimmedImage.sprite = ReactionImage[0];
         }
         
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(coolDownTime);
         BodyImage.sprite = DefaultImage;
         DimmedImage.sprite = DefaultImage;
     }

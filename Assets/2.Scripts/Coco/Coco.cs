@@ -35,6 +35,8 @@ public class Coco : MonoBehaviour
         {
             anim.Play(animName, 0);
         }
+        
+        UIManager.Instance.SetUICocoFace(state);
 
         Debug.Log($"Coco State Changed: run{state}");
     }
