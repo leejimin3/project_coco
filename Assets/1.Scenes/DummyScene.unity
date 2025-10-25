@@ -119,6 +119,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4109820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4109821}
+  - component: {fileID: 4109822}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4109821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109820}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 876651636}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4109822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d046a4176ecc64cb33ff7a6ee496ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  slider: {fileID: 0}
+  duration: 30
+  buttonList: []
+  btnsPos: []
+  btns: []
+  keys: 
+  nextFriendValue:
+  - 0
+  - 0.1
+  - 0.25
+  - 0.4
+  currentOpenedFriend: 0
+  isFriendComplete: 0
 --- !u!1 &29161351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1141,7 @@ Transform:
   - {fileID: 1407846033}
   - {fileID: 1630731134}
   - {fileID: 1050693208}
+  - {fileID: 4109821}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1050693207
@@ -2069,54 +2127,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5772fc3f7e9fe43d799b16d68aa19632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawnManager
-  lanes:
-  - laneName: 1
-    obstacles:
-    - obstaclePrefab: {fileID: 5814038059787133248, guid: ff81ec304d432457d9950afe7f4a97a0, type: 3}
-      weight: 25
-    spawnInterval: 5
-    spawnIntervalRandomRange: 2
-    spawnYOffset: -1.5
-    spawnYRandomRange: 0
-    moveSpeed: 2
-    moveSpeedRandomRange: 0
-    enableFlowEffect: 0
-    flowWaveAmplitudeX: 0
-    flowWaveAmplitudeY: 0
-    flowWaveSpeed: 0
-    nextSpawnTime: 0
-  - laneName: 2
-    obstacles:
-    - obstaclePrefab: {fileID: 6831420491013334209, guid: 180197e497d5349c58c5f93b798ed5ae, type: 3}
-      weight: 35
-    spawnInterval: 5
-    spawnIntervalRandomRange: 2
-    spawnYOffset: -3
-    spawnYRandomRange: 0
-    moveSpeed: 2
-    moveSpeedRandomRange: 0
-    enableFlowEffect: 0
-    flowWaveAmplitudeX: 0
-    flowWaveAmplitudeY: 0
-    flowWaveSpeed: 0
-    nextSpawnTime: 0
-  - laneName: 2
-    obstacles:
-    - obstaclePrefab: {fileID: 3456417170045234339, guid: 61b453360f56f4114bf2fe5837fc6775, type: 3}
-      weight: 55
-    spawnInterval: 5
-    spawnIntervalRandomRange: 2
-    spawnYOffset: -3
-    spawnYRandomRange: 0
-    moveSpeed: 2
-    moveSpeedRandomRange: 0
-    enableFlowEffect: 0
-    flowWaveAmplitudeX: 0
-    flowWaveAmplitudeY: 0
-    flowWaveSpeed: 0
-    nextSpawnTime: 0
+  obstacles:
+  - obstaclePrefab: {fileID: 3456417170045234339, guid: 61b453360f56f4114bf2fe5837fc6775, type: 3}
+    weight: 25
+    customSpawnInterval: 15
+    customSpawnIntervalRandomRange: 2
+    customMoveSpeed: 5
+    customMoveSpeedRandomRange: 0.5
+  - obstaclePrefab: {fileID: 5814038059787133248, guid: ff81ec304d432457d9950afe7f4a97a0, type: 3}
+    weight: 35
+    customSpawnInterval: 5
+    customSpawnIntervalRandomRange: 2
+    customMoveSpeed: 3
+    customMoveSpeedRandomRange: 0.5
+  - obstaclePrefab: {fileID: 6831420491013334209, guid: 180197e497d5349c58c5f93b798ed5ae, type: 3}
+    weight: 45
+    customSpawnInterval: 10
+    customSpawnIntervalRandomRange: 2
+    customMoveSpeed: 1
+    customMoveSpeedRandomRange: 0.5
+  spawnInterval: 2
+  spawnIntervalRandomRange: 0.5
   spawnXOffset: 1
+  spawnYMin: -1.05
+  spawnYMax: -1
+  moveSpeed: 10
+  moveSpeedRandomRange: 2
   moveDirection: -1
+  enableFlowEffect: 1
+  flowWaveAmplitudeX: 0.3
+  flowWaveAmplitudeY: 0.2
+  flowWaveSpeed: 2
   showDebugLogs: 1
 --- !u!1 &1674735651
 GameObject:
@@ -2858,6 +2899,8 @@ MonoBehaviour:
   cocoPlayer: {fileID: 299448235}
   fadeOutStartAngle: 90
   fadeOutSpeed: 1
+  failAngle: 90
+  failDelay: 0.2
 --- !u!50 &2041730286
 Rigidbody2D:
   serializedVersion: 5

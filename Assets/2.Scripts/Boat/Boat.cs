@@ -127,14 +127,28 @@ public class Boat : MonoBehaviour
         // Z축 회전을 -180 ~ 180 범위로 정규화
         if (currentRot > 180f) currentRot -= 360f;
 
-        // 목표 회전각에 0도로의 복원력을 혼합
-        float adjustedTarget = Mathf.LerpAngle(targetRotation, 0f, restorationForce);
+        float newRot;
 
-        float newRot = Mathf.LerpAngle(
-            currentRot,
-            adjustedTarget,
-            Time.deltaTime * rotationSpeed
-        );
+        // 90도 이상이면 복원력 적용 안함
+        if (Mathf.Abs(currentRot) >= failAngle)
+        {
+            newRot = Mathf.LerpAngle(
+                currentRot,
+                targetRotation,
+                Time.deltaTime * rotationSpeed
+            );
+        }
+        else
+        {
+            // 90도 미만일 때만 0도로의 복원력을 혼합
+            float adjustedTarget = Mathf.LerpAngle(targetRotation, 0f, restorationForce);
+            newRot = Mathf.LerpAngle(
+                currentRot,
+                adjustedTarget,
+                Time.deltaTime * rotationSpeed
+            );
+        }
+
         transform.rotation = Quaternion.Euler(0, 0, newRot);
 
         // Coco 애니메이션 상태 업데이트
