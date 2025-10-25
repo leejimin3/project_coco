@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3201262570196462754}
   - component: {fileID: 8811593637963221106}
   - component: {fileID: 7154606586598902048}
+  - component: {fileID: 2403956449675598408}
   m_Layer: 0
   m_Name: Log
   m_TagString: Obstacle
@@ -165,3 +166,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2403956449675598408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4909043747519201949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4981ae827d6f04e77ad68bd1a8a04b49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle
+  impactRotation: 45
+  impactDirection: 1

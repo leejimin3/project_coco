@@ -14,8 +14,8 @@ public class ObstacleSpawnManager : MonoBehaviour
         [Tooltip("장애물 프리팹")]
         public GameObject obstaclePrefab;
 
-        [Tooltip("이 장애물의 스폰 가중치 (높을수록 자주 등장)")]
-        public float spawnWeight = 1f;
+        [Tooltip("장애물의 무게/충격강도 (높을수록 덜 자주 등장, 1~10 권장)")]
+        public float weight = 1f;
     }
 
     [System.Serializable]
@@ -160,8 +160,9 @@ public class ObstacleSpawnManager : MonoBehaviour
     private void SpawnObstacleInLane(Lane lane, int laneIndex)
     {
         // 가중치 기반 랜덤 선택
-        GameObject selectedPrefab = SelectRandomObstacle(lane.obstacles);
-        if (selectedPrefab == null) return;
+        ObstacleData selectedData = SelectRandomObstacleData(lane.obstacles);
+        if (selectedData == null || selectedData.obstaclePrefab == null) return;
+        GameObject selectedPrefab = selectedData.obstaclePrefab;
 
         // 스폰 위치 계산
         float spawnY = (mainCamera != null ? mainCamera.transform.position.y : 0f) + lane.spawnYOffset;
@@ -178,6 +179,13 @@ public class ObstacleSpawnManager : MonoBehaviour
         GameObject obstacle = Instantiate(selectedPrefab, spawnPosition, Quaternion.identity);
         obstacle.transform.SetParent(transform);
         activeObstacles.Add(obstacle);
+
+        // Obstacle 컴포넌트에 무게(충격강도) 설정
+        Obstacle obstacleComponent = obstacle.GetComponent<Obstacle>();
+        if (obstacleComponent != null)
+        {
+            obstacleComponent.impactRotation = selectedData.weight * 10f; // 무게를 충격강도로 변환 (weight 1 = 10도)
+        }
 
         // 물결 효과 데이터 생성
         ObstacleFlowData flowData = new ObstacleFlowData
@@ -201,35 +209,35 @@ public class ObstacleSpawnManager : MonoBehaviour
     }
 
     /// <summary>
-    /// 가중치 기반 랜덤 장애물 선택
+    /// 무게 기반 랜덤 장애물 선택 (무거울수록 확률 낮음)
     /// </summary>
-    private GameObject SelectRandomObstacle(ObstacleData[] obstacles)
+    private ObstacleData SelectRandomObstacleData(ObstacleData[] obstacles)
     {
         if (obstacles.Length == 0) return null;
 
-        // 총 가중치 계산
-        float totalWeight = 0f;
+        // 총 역가중치 계산 (무게의 역수 = 무거울수록 낮은 확률)
+        float totalInverseWeight = 0f;
         foreach (var obstacle in obstacles)
         {
-            totalWeight += obstacle.spawnWeight;
+            totalInverseWeight += 1f / Mathf.Max(obstacle.weight, 0.1f);
         }
 
         // 랜덤 값 생성
-        float randomValue = Random.Range(0f, totalWeight);
+        float randomValue = Random.Range(0f, totalInverseWeight);
 
-        // 가중치에 따라 선택
+        // 역가중치에 따라 선택
         float currentWeight = 0f;
         foreach (var obstacle in obstacles)
         {
-            currentWeight += obstacle.spawnWeight;
+            currentWeight += 1f / Mathf.Max(obstacle.weight, 0.1f);
             if (randomValue <= currentWeight)
             {
-                return obstacle.obstaclePrefab;
+                return obstacle;
             }
         }
 
         // 기본값 (첫 번째)
-        return obstacles[0].obstaclePrefab;
+        return obstacles[0];
     }
 
     /// <summary>
