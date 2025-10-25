@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-guid: 9020ef8eb88d04eae92d62e23df57200
+guid: 12e48ab4d4a90bf45a9424ee35538b64
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2074110005033429554
-    second: A1_Sky_0
-========
-guid: 7adcb6ede9215174496de16d47cc77bc
-TextureImporter:
-  internalIDToNameTable:
+      213: -1427021893298218915
+    second: "UI \u1107\u1161 _0"
   - first:
-      213: 130886672765496906
-    second: STOP_0
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
+      213: 6607843545214890117
+    second: "UI \u1107\u1161 _1"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,7 +100,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -122,22 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-      name: A1_Sky_0
-========
-      name: STOP_0
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
+      name: "UI \u1107\u1161 _0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-        width: 2880
-        height: 1080
-========
-        width: 56
-        height: 56
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
+        x: 743
+        y: 3031
+        width: 6454
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,13 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-      spriteID: 23ae91b7f08b8cc10800000000000000
-      internalID: 2074110005033429554
-========
-      spriteID: a4e25044cb001d100800000000000000
-      internalID: 130886672765496906
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
+      spriteID: d5811431623323ce0800000000000000
+      internalID: -1427021893298218915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "UI \u1107\u1161 _1"
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1457
+        width: 6455
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58034ebc1b6c3bb50800000000000000
+      internalID: 6607843545214890117
       vertices: []
       indices: 
       edges: []
@@ -161,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -171,11 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-      A1_Sky_0: 2074110005033429554
-========
-      STOP_0: 130886672765496906
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
+      "UI \u1107\u1161 _0": -1427021893298218915
+      "UI \u1107\u1161 _1": 6607843545214890117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
