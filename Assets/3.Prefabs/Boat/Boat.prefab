@@ -146,7 +146,7 @@ MonoBehaviour:
   rotationSpeed: 1
   restorationForce: 0.05
   collisionOffsetDistance: 10
-  collisionEffectPrefab: {fileID: 0}
+  collisionEffectPrefab: {fileID: 1934588597033885391, guid: 275422293d4d5064eb64ea1389e8a1d3, type: 3}
   cocoPlayer: {fileID: 0}
   fadeOutStartAngle: 90
   fadeOutSpeed: 1

@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6977288961409489594, guid: b31cbafec6806406d9fcaf0804dc2cec, type: 3}
       propertyPath: rotateValue
-      value: 30
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6977288961409489594, guid: b31cbafec6806406d9fcaf0804dc2cec, type: 3}
       propertyPath: waterYOffset

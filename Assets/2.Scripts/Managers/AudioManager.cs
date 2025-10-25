@@ -5,6 +5,34 @@ using UnityEngine.SceneManagement;
 
 public enum Sfx
 {
+    coco_sound1,
+    coco_sound2,
+    coco_sound3,
+    
+    mell_success,
+    miew_success,
+    adwd_success,
+    toto_success,
+    
+    mell_failed,
+    miew_failed,
+    adwd_failed,
+    toto_failed,
+    
+    key_success,
+    key_failed,
+    
+    bgm_ingame,
+    bgm_win,
+    bgm_lose,
+    
+    cutScene1,
+    cutScene2,
+    cutScene3,
+    cutScene4,
+    cutScene5,
+    cutScene6,
+    bgm_cutScene,
 }
 
 [Serializable]

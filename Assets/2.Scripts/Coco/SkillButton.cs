@@ -4,6 +4,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum Friends
+{
+    mell,
+    miew,
+    adwd,
+    toto,
+}
 public class SkillButton : MonoBehaviour
 {
     public GameObject Cooldown;
@@ -28,6 +35,8 @@ public class SkillButton : MonoBehaviour
     public Sprite[] ReactionImage;
     
     public Animator anim;
+    
+    public Friends EFriend;
     public void TryAttack()
     {
         if (bIsCoolDown)
@@ -36,14 +45,27 @@ public class SkillButton : MonoBehaviour
         bool flag = GameManager.Instance.TryAttack(key);
         if (flag)
         {
+            AudioManager.Instance.PlaySfx(Sfx.key_success);
             StartReaction(true);
         }
         if (!flag)
         {
+            AudioManager.Instance.PlaySfx(Sfx.key_failed);
             StartReaction(false);
             StartDimmed();
             StartCoolDown();
         }
+    }
+
+    public void AllFail()
+    {
+        if (bIsCoolDown)
+            return;
+        
+        AudioManager.Instance.PlaySfx(Sfx.key_failed);
+        StartReaction(false);
+        StartDimmed();
+        StartCoolDown();
     }
 
     public void StartReaction(bool flag)
@@ -65,11 +87,47 @@ public class SkillButton : MonoBehaviour
         {
             BodyImage.sprite = ReactionImage[1];
             DimmedImage.sprite = ReactionImage[1];
+
+            switch (EFriend)
+            {
+                case Friends.mell:
+                    AudioManager.Instance.PlaySfx(Sfx.mell_success);
+                    break;
+                case Friends.miew:
+                    AudioManager.Instance.PlaySfx(Sfx.miew_success);
+                    break;
+                case Friends.adwd:
+                    AudioManager.Instance.PlaySfx(Sfx.adwd_success);
+                    break;
+                case Friends.toto:
+                    AudioManager.Instance.PlaySfx(Sfx.toto_success);
+                    break;
+                default:
+                    break;
+            }
         }
         else
         {
             BodyImage.sprite = ReactionImage[0];
             DimmedImage.sprite = ReactionImage[0];
+            
+            switch (EFriend)
+            {
+                case Friends.mell:
+                    AudioManager.Instance.PlaySfx(Sfx.mell_failed);
+                    break;
+                case Friends.miew:
+                    AudioManager.Instance.PlaySfx(Sfx.miew_failed);
+                    break;
+                case Friends.adwd:
+                    AudioManager.Instance.PlaySfx(Sfx.adwd_failed);
+                    break;
+                case Friends.toto:
+                    AudioManager.Instance.PlaySfx(Sfx.toto_failed);
+                    break;
+                default:
+                    break;
+            }
         }
         
         yield return new WaitForSeconds(coolDownTime);

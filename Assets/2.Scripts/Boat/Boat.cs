@@ -293,48 +293,50 @@ public class Boat : MonoBehaviour
         // Obstacle과 충돌 시 (Trigger 방식)
         if (collision.gameObject.CompareTag("Obstacle"))
         {
-            HandleCollision(collision.gameObject);
+            HandleCollision(collision);
         }
     }
 
     /// <summary>
     /// 충돌 시 이펙트 생성 및 Obstacle 위치 이동
     /// </summary>
-    private void HandleCollision(GameObject obstacle)
+
+    private void HandleCollision(Collider2D collision)
     {
+        GameObject obstacle = collision.gameObject;
         Debug.Log("Boat collided with obstacle!");
+
+        // 충돌 지점 계산
+        Vector3 hitPoint = collision.ClosestPoint(transform.position); // Boat 중심 기준으로 가장 가까운 점
 
         // 충돌 이펙트 생성
         if (collisionEffectPrefab != null)
         {
-            Instantiate(collisionEffectPrefab, transform.position, Quaternion.identity);
+            Instantiate(collisionEffectPrefab, hitPoint, Quaternion.identity);
         }
 
-        // Obstacle의 충격 정보 가져오기
+        // Obstacle 충격 처리
         Obstacle obstacleComponent = obstacle.GetComponent<Obstacle>();
         if (obstacleComponent != null)
         {
-            // 현재 회전각에 충격 회전 추가 (제한 없이)
             float currentRot = transform.eulerAngles.z;
             if (currentRot > 180f) currentRot -= 360f;
 
             float impactRotation = obstacleComponent.GetImpactRotation();
             targetRotation += impactRotation;
 
-            // 타이머 리셋하여 바로 다음 랜덤 회전으로 덮어씌워지지 않도록
             timer = 0f;
 
             Debug.Log($"Impact applied: {impactRotation} degrees. Current target rotation: {targetRotation}");
         }
 
-        // Boat의 너비 계산
+        // Boat 너비 기준으로 Obstacle 이동
         float boatWidth = 0f;
         if (spriteRenderer != null)
         {
             boatWidth = spriteRenderer.bounds.size.x;
         }
 
-        // Obstacle을 왼쪽으로 이동 (boat width + offset distance)
         Vector3 obstaclePosition = obstacle.transform.position;
         obstaclePosition.x -= (boatWidth + collisionOffsetDistance);
         obstacle.transform.position = obstaclePosition;

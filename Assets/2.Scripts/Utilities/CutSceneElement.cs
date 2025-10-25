@@ -29,6 +29,9 @@ public class CutSceneElement : MonoBehaviour
     [Header("딜레이")]
     [SerializeField] private float startDelay = 0f;
 
+    [SerializeField] private Sfx sfx;
+    public bool playSfx = false;
+
     private Image image;
     private RectTransform rectTransform;
     private Vector2 originalPosition;
@@ -70,10 +73,20 @@ public class CutSceneElement : MonoBehaviour
         {
             seq.AppendInterval(startDelay);
         }
+        
+        // 🎵 재생 시작 시 사운드 실행
+        if (playSfx && sfx != null)
+        {
+            seq.AppendCallback(() =>
+            {
+                // ✅ AudioManager 또는 SoundManager를 사용하는 부분
+                AudioManager.Instance.PlaySfx(sfx);
+            });
+        }
 
         // 초기화
         ResetToInitialState();
-
+        
         // 애니메이션 타입에 따라 분기
         switch (animationType)
         {
@@ -158,4 +171,13 @@ public class CutSceneElement : MonoBehaviour
         rectTransform.localRotation = originalRotation;
         image.color = originalColor;
     }
+
+
 }
+
+
+//
+// public void PlaySfx()
+// {
+//     if(playSfx) AudioManager.Instance.PlaySfx(sfx);
+// }

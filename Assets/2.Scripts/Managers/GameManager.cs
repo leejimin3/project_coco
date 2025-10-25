@@ -28,20 +28,39 @@ public class GameManager : BaseSingleton<GameManager>
     public float[] nextFriendValue = new float[] {0f, 0.1f, 0.25f, 0.4f};
     public int currentOpenedFriend = 0;
     public bool isFriendComplete = false;
+    public float rank;
 
     [Header("Game State")]
     private bool isGameOver = false;
 
     private void Start()
     {
+        AudioManager.Instance.PlaySfxLoop(Sfx.bgm_ingame);
         StartFill();
+        Debug.Log(DataManager.Instance.difficulty);
     }
 
     private void Update()
     {
         if (isGameOver) return;
 
+        rank += Time.deltaTime;
         TryInput();
+        
+        if (Input.anyKeyDown)
+        {
+            // Input.anyKeyDown이 true일 때, 실제 눌린 KeyCode 확인
+            foreach (KeyCode k in Enum.GetValues(typeof(KeyCode)))
+            {
+                if (Input.GetKeyDown(k) && !keys.Contains(k) && keyPool.Contains(k))
+                {
+                    foreach (var btn in btns)
+                    {
+                        btn.AllFail();
+                    }
+                }
+            }
+        }
     }
 
     public bool TryAttack(KeyCode key)
@@ -167,6 +186,8 @@ public class GameManager : BaseSingleton<GameManager>
         Debug.Log("===========================================");
 
         UIManager.Instance.OpenLosePanel();
+        AudioManager.Instance.StopSfxLoop();
+        AudioManager.Instance.PlaySfx(Sfx.bgm_lose);
         // Time.timeScale을 0으로 설정하여 게임 정지
         Time.timeScale = 0f;
 
@@ -191,6 +212,8 @@ public class GameManager : BaseSingleton<GameManager>
         Debug.Log("===========================================");
 
         UIManager.Instance.OpenWinPanel();
+        AudioManager.Instance.StopSfxLoop();
+        AudioManager.Instance.PlaySfx(Sfx.bgm_win);
         // Time.timeScale을 0으로 설정하여 게임 정지
         Time.timeScale = 0f;
 

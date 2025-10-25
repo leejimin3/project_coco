@@ -46,6 +46,8 @@ public class CutSceneController : MonoBehaviour
 
     private Sequence mainSequence;
     private bool isPlaying = false;
+    
+    [SerializeField] public AudioClip[] audioClip;
 
     private void Start()
     {
@@ -130,7 +132,7 @@ public class CutSceneController : MonoBehaviour
 
             int index = i;
             mainSequence.AppendCallback(() => OnElementStart?.Invoke(index));
-
+            //AudioManager.Instance.PlaySfx();
             Sequence elementSeq = element.GetAnimationSequence();
             if (elementSeq != null)
             {

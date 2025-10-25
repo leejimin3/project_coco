@@ -63,6 +63,7 @@ MonoBehaviour:
   - {fileID: -2040124082373211023, guid: 556df706bcee4d543b96579b3727f63a, type: 3}
   - {fileID: -2536704175745908611, guid: 77f0b6c00857c564c8876f2e6f70220c, type: 3}
   anim: {fileID: 0}
+  EFriend: 2
 --- !u!1 &1605819904680307627
 GameObject:
   m_ObjectHideFlags: 0
