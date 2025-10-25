@@ -6,39 +6,25 @@ public class Coco : MonoBehaviour
     public Animator anim;
     public int runState;
 
+    public float moveSpeed = 1.66f;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
         if (anim == null)
         {
-            Debug.LogError("코코 애니메이션 누락");
+            Debug.LogError("코코 애니메이터 누락");
         }
-    }
-
-    private void Update()
-    {
-        TryInput(); 
-        TryTest();
     }
     
-    private void TryInput()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Debug.Log("Q스킬 사용");
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Debug.Log("W스킬 사용");
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("E스킬 사용");
-        }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("R스킬 사용");
-        }
+        TryTest();
+    }
+
+    public void Actions()
+    {
+        Debug.Log("Action");
     }
 
     private void TryTest()
