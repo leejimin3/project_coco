@@ -3,245 +3,205 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
-/// Wave 기반 배경 관리 시스템
-/// Wave들이 끊김 없이 이어져서 스크롤
+/// Depth 기반 배경 무한 스크롤 시스템
+/// Depth(Sorting Order)에 따라 스크롤 속도 차등 적용 (패럴랙스 효과)
+/// Time.deltaTime 기반으로 프레임과 무관한 일정한 속도 유지
 /// </summary>
 public class BackgroundManager : MonoBehaviour
 {
     [System.Serializable]
-    public class BackgroundElement
+    public class BackgroundLayer
     {
-        [Tooltip("배경 GameObject (Hierarchy의 Backgrounds 그룹 내)")]
+        [Tooltip("배경 GameObject")]
         public GameObject backgroundObject;
 
-        [Tooltip("스크롤 속도")]
-        public float scrollSpeed = 10f;
+        [Tooltip("Depth (Sorting Order) - 높을수록 앞쪽")]
+        public int depth = 0;
 
+        [Tooltip("스크롤 속도 (depth가 높을수록 빠르게 설정 권장)")]
+        public float scrollSpeed = 5f;
+
+        [HideInInspector] public GameObject clone;
         [HideInInspector] public float spriteWidth;
+        [HideInInspector] public float startX;
     }
 
-    [System.Serializable]
-    public class Wave
-    {
-        [Tooltip("이 Wave의 배경 요소들")]
-        public BackgroundElement[] elements;
-    }
-
-    [Header("Wave Settings")]
-    [Tooltip("Wave 목록 (순서대로 진행)")]
-    public Wave[] waves;
+    [Header("Background Layers")]
+    [Tooltip("배경 레이어들 (depth 순서 무관, depth 값으로 자동 정렬)")]
+    public BackgroundLayer[] layers;
 
     [Header("Scroll Settings")]
     [Tooltip("스크롤 방향 (왼쪽: -1, 오른쪽: 1)")]
     public float scrollDirection = -1f;
 
-    private List<GameObject> activeBackgrounds = new List<GameObject>();
-    private int currentWaveIndex = 0;
-    private int nextWaveIndex = 1;
+    [Tooltip("전역 속도 배율 (모든 레이어에 적용)")]
+    public float globalSpeedMultiplier = 1f;
 
     private void Start()
     {
-        if (waves.Length == 0) return;
-
-        // 모든 Wave의 요소들 비활성화
-        foreach (var wave in waves)
-        {
-            foreach (var element in wave.elements)
-            {
-                if (element.backgroundObject != null)
-                {
-                    element.backgroundObject.SetActive(false);
-                }
-            }
-        }
-
-        // 첫 번째와 두 번째 Wave 배치
-        PositionWave(0, 0); // Wave 1을 화면에
-        if (waves.Length > 1)
-        {
-            PositionWave(1, GetWaveWidth(0)); // Wave 2를 Wave 1 오른쪽에
-        }
+        InitializeBackgrounds();
     }
 
     private void Update()
     {
-        if (waves.Length == 0) return;
-
-        // 모든 활성 배경 스크롤
-        foreach (var bg in activeBackgrounds)
-        {
-            if (bg != null)
-            {
-                Vector3 pos = bg.transform.position;
-
-                // 해당 배경의 스크롤 속도 찾기
-                float speed = 10f;
-                foreach (var wave in waves)
-                {
-                    foreach (var element in wave.elements)
-                    {
-                        if (element.backgroundObject == bg)
-                        {
-                            speed = element.scrollSpeed;
-                            break;
-                        }
-                    }
-                }
-
-                pos.x += scrollDirection * speed * Time.deltaTime;
-                bg.transform.position = pos;
-            }
-        }
-
-        // 첫 번째 Wave가 화면 밖으로 나갔는지 체크
-        CheckAndRecycleWave();
+        ScrollBackgrounds();
+        CheckLoopReset();
     }
 
     /// <summary>
-    /// 특정 Wave를 특정 X 위치에 배치
+    /// 배경 초기화 및 복제본 생성
     /// </summary>
-    private void PositionWave(int waveIndex, float startX)
+    private void InitializeBackgrounds()
     {
-        if (waveIndex >= waves.Length) return;
-
-        Wave wave = waves[waveIndex];
-        int sortingOrder = 0;
-
-        foreach (var element in wave.elements)
+        foreach (var layer in layers)
         {
-            if (element.backgroundObject != null)
+            if (layer.backgroundObject != null)
             {
-                element.backgroundObject.SetActive(true);
-
-                SpriteRenderer sr = element.backgroundObject.GetComponent<SpriteRenderer>();
+                SpriteRenderer sr = layer.backgroundObject.GetComponent<SpriteRenderer>();
                 if (sr != null)
                 {
-                    sr.sortingOrder = sortingOrder;
-                    sortingOrder++;
+                    // Depth(Sorting Order) 설정
+                    sr.sortingOrder = layer.depth;
 
-                    element.spriteWidth = sr.bounds.size.x;
+                    // 스프라이트 너비 계산
+                    layer.spriteWidth = sr.bounds.size.x;
+                    layer.startX = layer.backgroundObject.transform.position.x;
+
+                    // 복제본 생성 (무한 스크롤용)
+                    layer.clone = Instantiate(layer.backgroundObject, layer.backgroundObject.transform.parent);
+                    layer.clone.name = layer.backgroundObject.name + "_Clone";
+
+                    // 복제본 Sorting Order 동일하게 설정
+                    SpriteRenderer cloneSr = layer.clone.GetComponent<SpriteRenderer>();
+                    if (cloneSr != null)
+                    {
+                        cloneSr.sortingOrder = layer.depth;
+                    }
+
+                    // 복제본을 원본 옆에 배치
+                    Vector3 clonePos = layer.backgroundObject.transform.position;
+                    if (scrollDirection < 0)
+                    {
+                        // 왼쪽 스크롤: 복제본을 오른쪽에
+                        clonePos.x += layer.spriteWidth;
+                    }
+                    else
+                    {
+                        // 오른쪽 스크롤: 복제본을 왼쪽에
+                        clonePos.x -= layer.spriteWidth;
+                    }
+                    layer.clone.transform.position = clonePos;
+
+                    Debug.Log($"Background Layer: {layer.backgroundObject.name}, Depth: {layer.depth}, Speed: {layer.scrollSpeed}, Width: {layer.spriteWidth:F2}");
                 }
-
-                // 위치 설정
-                Vector3 pos = element.backgroundObject.transform.position;
-                pos.x = startX;
-                element.backgroundObject.transform.position = pos;
-
-                activeBackgrounds.Add(element.backgroundObject);
-
-                Debug.Log($"Wave {waveIndex + 1} - {element.backgroundObject.name} positioned at X={startX:F2}");
             }
         }
     }
 
     /// <summary>
-    /// Wave의 너비 계산
+    /// 배경 스크롤 (Time.deltaTime 기반)
     /// </summary>
-    private float GetWaveWidth(int waveIndex)
+    private void ScrollBackgrounds()
     {
-        if (waveIndex >= waves.Length || waves[waveIndex].elements.Length == 0)
-            return 0;
-
-        Wave wave = waves[waveIndex];
-        if (wave.elements[0].backgroundObject != null)
+        foreach (var layer in layers)
         {
-            SpriteRenderer sr = wave.elements[0].backgroundObject.GetComponent<SpriteRenderer>();
-            if (sr != null)
+            if (layer.backgroundObject != null)
             {
-                return sr.bounds.size.x;
-            }
-        }
-        return 0;
-    }
+                // 원본 스크롤
+                Vector3 pos = layer.backgroundObject.transform.position;
+                pos.x += scrollDirection * layer.scrollSpeed * globalSpeedMultiplier * Time.deltaTime;
+                layer.backgroundObject.transform.position = pos;
 
-    /// <summary>
-    /// Wave가 화면 밖으로 나가면 재활용
-    /// </summary>
-    private void CheckAndRecycleWave()
-    {
-        if (currentWaveIndex >= waves.Length) return;
-
-        Wave currentWave = waves[currentWaveIndex];
-        if (currentWave.elements.Length == 0) return;
-
-        var firstElement = currentWave.elements[0];
-        if (firstElement.backgroundObject != null && firstElement.backgroundObject.activeSelf)
-        {
-            float currentX = firstElement.backgroundObject.transform.position.x;
-            float spriteWidth = firstElement.spriteWidth;
-
-            // 배경이 완전히 화면 밖으로 나가면
-            if (scrollDirection < 0 && currentX <= -spriteWidth)
-            {
-                // 현재 Wave 비활성화 및 제거
-                DeactivateWave(currentWaveIndex);
-
-                // 다음 Wave 인덱스 업데이트
-                currentWaveIndex++;
-                if (currentWaveIndex >= waves.Length)
+                // 복제본 스크롤
+                if (layer.clone != null)
                 {
-                    currentWaveIndex = 0; // 순환
+                    Vector3 clonePos = layer.clone.transform.position;
+                    clonePos.x += scrollDirection * layer.scrollSpeed * globalSpeedMultiplier * Time.deltaTime;
+                    layer.clone.transform.position = clonePos;
                 }
-
-                nextWaveIndex = currentWaveIndex + 1;
-                if (nextWaveIndex >= waves.Length)
-                {
-                    nextWaveIndex = 0; // 순환
-                }
-
-                // 새로운 다음 Wave를 끝에 추가
-                float newWaveX = GetRightmostX() + GetWaveWidth(currentWaveIndex);
-                PositionWave(nextWaveIndex, newWaveX);
-
-                Debug.Log($"Wave {currentWaveIndex} removed, Wave {nextWaveIndex + 1} added");
             }
         }
     }
 
     /// <summary>
-    /// 현재 가장 오른쪽 배경의 X 위치 구하기
+    /// 무한 반복 체크 및 리셋
     /// </summary>
-    private float GetRightmostX()
+    private void CheckLoopReset()
     {
-        float rightmost = 0;
-        foreach (var bg in activeBackgrounds)
+        foreach (var layer in layers)
         {
-            if (bg != null && bg.activeSelf)
+            if (layer.backgroundObject != null && layer.clone != null)
             {
-                if (bg.transform.position.x > rightmost)
+                Vector3 pos = layer.backgroundObject.transform.position;
+                Vector3 clonePos = layer.clone.transform.position;
+
+                if (scrollDirection < 0)
                 {
-                    rightmost = bg.transform.position.x;
+                    // 왼쪽 스크롤: 원본이 화면 밖으로 나가면 복제본 오른쪽으로 이동
+                    if (pos.x <= layer.startX - layer.spriteWidth)
+                    {
+                        pos.x = clonePos.x + layer.spriteWidth;
+                        layer.backgroundObject.transform.position = pos;
+                    }
+                    // 복제본이 화면 밖으로 나가면 원본 오른쪽으로 이동
+                    if (clonePos.x <= layer.startX - layer.spriteWidth)
+                    {
+                        clonePos.x = pos.x + layer.spriteWidth;
+                        layer.clone.transform.position = clonePos;
+                    }
+                }
+                else if (scrollDirection > 0)
+                {
+                    // 오른쪽 스크롤: 원본이 화면 밖으로 나가면 복제본 왼쪽으로 이동
+                    if (pos.x >= layer.startX + layer.spriteWidth)
+                    {
+                        pos.x = clonePos.x - layer.spriteWidth;
+                        layer.backgroundObject.transform.position = pos;
+                    }
+                    // 복제본이 화면 밖으로 나가면 원본 왼쪽으로 이동
+                    if (clonePos.x >= layer.startX + layer.spriteWidth)
+                    {
+                        clonePos.x = pos.x - layer.spriteWidth;
+                        layer.clone.transform.position = clonePos;
+                    }
                 }
             }
         }
-        return rightmost;
     }
 
     /// <summary>
-    /// Wave 비활성화
+    /// 스크롤 속도 변경 (외부에서 호출 가능)
     /// </summary>
-    private void DeactivateWave(int waveIndex)
+    public void SetGlobalSpeed(float speed)
     {
-        if (waveIndex >= waves.Length) return;
+        globalSpeedMultiplier = speed;
+    }
 
-        Wave wave = waves[waveIndex];
-        foreach (var element in wave.elements)
-        {
-            if (element.backgroundObject != null)
-            {
-                element.backgroundObject.SetActive(false);
-                activeBackgrounds.Remove(element.backgroundObject);
-            }
-        }
+    /// <summary>
+    /// 스크롤 일시정지
+    /// </summary>
+    public void PauseScroll()
+    {
+        globalSpeedMultiplier = 0f;
+    }
+
+    /// <summary>
+    /// 스크롤 재개
+    /// </summary>
+    public void ResumeScroll()
+    {
+        globalSpeedMultiplier = 1f;
     }
 
     private void OnDestroy()
     {
-        // 모든 Wave 정리
-        for (int i = 0; i < waves.Length; i++)
+        // 복제본 정리
+        foreach (var layer in layers)
         {
-            DeactivateWave(i);
+            if (layer.clone != null)
+            {
+                Destroy(layer.clone);
+            }
         }
-        activeBackgrounds.Clear();
     }
 }

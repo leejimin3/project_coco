@@ -40,10 +40,19 @@ public class Boat : MonoBehaviour
     [Tooltip("Coco 플레이어 참조")]
     public Coco cocoPlayer;
 
+    [Header("Fade Out Settings")]
+    [Tooltip("페이드 아웃 시작 각도 (절대값)")]
+    public float fadeOutStartAngle = 90f;
+
+    [Tooltip("페이드 아웃 속도")]
+    public float fadeOutSpeed = 1f;
+
     private Vector3 targetPosition;
     private float targetRotation;
     private float timer;
     private SpriteRenderer spriteRenderer;
+    private bool isFadingOut = false;
+    private float currentAlpha = 1f;
 
     private void Start()
     {
@@ -122,6 +131,9 @@ public class Boat : MonoBehaviour
 
         // Coco 애니메이션 상태 업데이트
         UpdateCocoAnimation(newRot);
+
+        // 페이드 아웃 체크 및 처리
+        UpdateFadeOut(newRot);
     }
 
     /// <summary>
@@ -153,6 +165,48 @@ public class Boat : MonoBehaviour
         }
 
         cocoPlayer.SetState(animState);
+    }
+
+    /// <summary>
+    /// 회전각에 따라 페이드 아웃 처리
+    /// </summary>
+    private void UpdateFadeOut(float rotation)
+    {
+        if (spriteRenderer == null) return;
+
+        float absRotation = Mathf.Abs(rotation);
+
+        // 90도 이상이면 페이드 아웃 시작
+        if (absRotation >= fadeOutStartAngle)
+        {
+            if (!isFadingOut)
+            {
+                isFadingOut = true;
+                Debug.Log($"Fade out started at rotation: {absRotation:F2}");
+            }
+
+            // 알파값 감소
+            currentAlpha -= fadeOutSpeed * Time.deltaTime;
+            currentAlpha = Mathf.Clamp01(currentAlpha);
+        }
+        else
+        {
+            // 90도 미만이면 페이드 인 (복원)
+            if (isFadingOut)
+            {
+                isFadingOut = false;
+                Debug.Log($"Fade in started at rotation: {absRotation:F2}");
+            }
+
+            // 알파값 증가
+            currentAlpha += fadeOutSpeed * Time.deltaTime;
+            currentAlpha = Mathf.Clamp01(currentAlpha);
+        }
+
+        // SpriteRenderer에 알파 적용
+        Color color = spriteRenderer.color;
+        color.a = currentAlpha;
+        spriteRenderer.color = color;
     }
 
     /// <summary>

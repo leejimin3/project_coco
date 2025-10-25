@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: d058c197ed9c5453290f33e5a609b981
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2926607031915922508
+    second: D4_Reed_0
+  - first:
+      213: -2127816616931953153
+    second: D4_Reed_1
+  - first:
+      213: -5143838902142838514
+    second: D4_Reed_2
+  - first:
+      213: 3797334280008219811
+    second: D4_Reed_3
+  - first:
+      213: -49131509382631278
+    second: D4_Reed_4
+  - first:
+      213: -7391418522904298966
+    second: D4_Reed_5
+  - first:
+      213: 1960674289300282122
+    second: D4_Reed_6
+  - first:
+      213: -3965817565876641620
+    second: D4_Reed_7
+  - first:
+      213: 1952209929672945710
+    second: D4_Reed_8
+  - first:
+      213: 9031788177582394907
+    second: D4_Reed_9
+  - first:
+      213: -1507240341935308029
+    second: D4_Reed_10
+  - first:
+      213: -8810496939799228388
+    second: D4_Reed_11
+  - first:
+      213: -1291861709932962626
+    second: D4_Reed_12
+  - first:
+      213: -2663406800848062897
+    second: D4_Reed_13
+  - first:
+      213: -7790139697274714330
+    second: D4_Reed_14
+  - first:
+      213: 4299272266756940018
+    second: D4_Reed_15
+  - first:
+      213: 4677755306002102613
+    second: D4_Reed_16
+  - first:
+      213: 8566407781743860753
+    second: D4_Reed_17
+  - first:
+      213: 4091086148770172887
+    second: D4_Reed_18
+  - first:
+      213: -5575551968899184512
+    second: D4_Reed_19
+  - first:
+      213: 1319956306183911131
+    second: D4_Reed_20
+  - first:
+      213: -1519216948093984109
+    second: D4_Reed_21
+  - first:
+      213: -6714020171833947450
+    second: D4_Reed_22
+  - first:
+      213: -6083515707448085804
+    second: D4_Reed_23
+  - first:
+      213: -2144465329867291879
+    second: D4_Reed_24
+  - first:
+      213: 3075403783006609896
+    second: D4_Reed_25
+  - first:
+      213: 4436831860271237366
+    second: D4_Reed_26
+  - first:
+      213: 8224169606723634352
+    second: D4_Reed_27
+  - first:
+      213: 5965503300681771038
+    second: D4_Reed_28
+  - first:
+      213: -5321103223610387508
+    second: D4_Reed_29
+  - first:
+      213: 5512335306898758980
+    second: D4_Reed_30
+  - first:
+      213: 7897553406782261060
+    second: D4_Reed_31
+  - first:
+      213: -1114151940033690713
+    second: D4_Reed_32
+  - first:
+      213: 5315856623854869264
+    second: D4_Reed_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: D4_Reed_0
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 372
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c444286f6956d9820800000000000000
+      internalID: 2926607031915922508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_1
+      rect:
+        serializedVersion: 2
+        x: 5004
+        y: 372
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5f8908f0a7872e0800000000000000
+      internalID: -2127816616931953153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_2
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 331
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09d0ff85c96d98b0800000000000000
+      internalID: -5143838902142838514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_3
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 344
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acbd459867d2b430800000000000000
+      internalID: 3797334280008219811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_4
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 351
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29038fb0723715ff0800000000000000
+      internalID: -49131509382631278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_5
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 339
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2afb0cc3086c6990800000000000000
+      internalID: -7391418522904298966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_6
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 346
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b1cf5c0e6b53b10800000000000000
+      internalID: 1960674289300282122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_7
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 333
+        width: 49
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca02be58fe596f8c0800000000000000
+      internalID: -3965817565876641620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_8
+      rect:
+        serializedVersion: 2
+        x: 2950
+        y: 321
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2075297694a71b10800000000000000
+      internalID: 1952209929672945710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_9
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 331
+        width: 54
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e0f5bbe7b575d70800000000000000
+      internalID: 9031788177582394907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_10
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 344
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303cecb05e4351be0800000000000000
+      internalID: -1507240341935308029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_11
+      rect:
+        serializedVersion: 2
+        x: 5014
+        y: 351
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10d99896b3dab580800000000000000
+      internalID: -8810496939799228388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_12
+      rect:
+        serializedVersion: 2
+        x: 5093
+        y: 339
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc54809e92621ee0800000000000000
+      internalID: -1291861709932962626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_13
+      rect:
+        serializedVersion: 2
+        x: 5514
+        y: 346
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46771f30ada90bd0800000000000000
+      internalID: -2663406800848062897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 5760
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6278541283dd3e390800000000000000
+      internalID: -7790139697274714330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_15
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 316
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f06cbc19551aab30800000000000000
+      internalID: 4299272266756940018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_16
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 322
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5593470caa9bae040800000000000000
+      internalID: 4677755306002102613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_17
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 330
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c1cff9d7ef1e670800000000000000
+      internalID: 8566407781743860753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_18
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 324
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df87f24d2576c830800000000000000
+      internalID: 4091086148770172887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_19
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 331
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088c80b5609af92b0800000000000000
+      internalID: -5575551968899184512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_20
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 327
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6f02d544d615210800000000000000
+      internalID: 1319956306183911131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_21
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 315
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392ea102c38aaeae0800000000000000
+      internalID: -1519216948093984109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_22
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 335
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cac703e93203d2a0800000000000000
+      internalID: -6714020171833947450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_23
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 323
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d23c0822b2039ba0800000000000000
+      internalID: -6083515707448085804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_24
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 325
+        width: 52
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9138e14f4245d32e0800000000000000
+      internalID: -2144465329867291879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_25
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 319
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1600b42770eaa20800000000000000
+      internalID: 3075403783006609896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_26
+      rect:
+        serializedVersion: 2
+        x: 3481
+        y: 316
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f84a9fc11bc29d30800000000000000
+      internalID: 4436831860271237366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_27
+      rect:
+        serializedVersion: 2
+        x: 3991
+        y: 322
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4835d0fae122270800000000000000
+      internalID: 8224169606723634352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_28
+      rect:
+        serializedVersion: 2
+        x: 4251
+        y: 330
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18ae8735a9b9c250800000000000000
+      internalID: 5965503300681771038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_29
+      rect:
+        serializedVersion: 2
+        x: 4601
+        y: 324
+        width: 50
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3548f7fc4a726b0800000000000000
+      internalID: -5321103223610387508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_30
+      rect:
+        serializedVersion: 2
+        x: 4992
+        y: 331
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d5b8a81cfbf7c40800000000000000
+      internalID: 5512335306898758980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_31
+      rect:
+        serializedVersion: 2
+        x: 5418
+        y: 327
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447ceedfafeb99d60800000000000000
+      internalID: 7897553406782261060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_32
+      rect:
+        serializedVersion: 2
+        x: 5465
+        y: 315
+        width: 58
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3ca7ca6bcb980f0800000000000000
+      internalID: -1114151940033690713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D4_Reed_33
+      rect:
+        serializedVersion: 2
+        x: 5533
+        y: 335
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bd6cd4f67b5c940800000000000000
+      internalID: 5315856623854869264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      D4_Reed_0: 2926607031915922508
+      D4_Reed_1: -2127816616931953153
+      D4_Reed_10: -1507240341935308029
+      D4_Reed_11: -8810496939799228388
+      D4_Reed_12: -1291861709932962626
+      D4_Reed_13: -2663406800848062897
+      D4_Reed_14: -7790139697274714330
+      D4_Reed_15: 4299272266756940018
+      D4_Reed_16: 4677755306002102613
+      D4_Reed_17: 8566407781743860753
+      D4_Reed_18: 4091086148770172887
+      D4_Reed_19: -5575551968899184512
+      D4_Reed_2: -5143838902142838514
+      D4_Reed_20: 1319956306183911131
+      D4_Reed_21: -1519216948093984109
+      D4_Reed_22: -6714020171833947450
+      D4_Reed_23: -6083515707448085804
+      D4_Reed_24: -2144465329867291879
+      D4_Reed_25: 3075403783006609896
+      D4_Reed_26: 4436831860271237366
+      D4_Reed_27: 8224169606723634352
+      D4_Reed_28: 5965503300681771038
+      D4_Reed_29: -5321103223610387508
+      D4_Reed_3: 3797334280008219811
+      D4_Reed_30: 5512335306898758980
+      D4_Reed_31: 7897553406782261060
+      D4_Reed_32: -1114151940033690713
+      D4_Reed_33: 5315856623854869264
+      D4_Reed_4: -49131509382631278
+      D4_Reed_5: -7391418522904298966
+      D4_Reed_6: 1960674289300282122
+      D4_Reed_7: -3965817565876641620
+      D4_Reed_8: 1952209929672945710
+      D4_Reed_9: 9031788177582394907
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
