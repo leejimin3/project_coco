@@ -54,11 +54,10 @@ public class CutSceneController : MonoBehaviour
             FindAllElements();
         }
 
-        // 컷씬 카메라 설정
-        SetupCutSceneCamera();
-
+        // playOnStart가 true일 때만 카메라 설정
         if (playOnStart)
         {
+            SetupCutSceneCamera();
             PlayCutScene();
         }
     }
@@ -117,6 +116,9 @@ public class CutSceneController : MonoBehaviour
             Debug.LogWarning("No CutSceneElements found!");
             return;
         }
+
+        // 컷씬 시작 시 카메라 설정
+        SetupCutSceneCamera();
 
         isPlaying = true;
         OnCutSceneStart?.Invoke();
