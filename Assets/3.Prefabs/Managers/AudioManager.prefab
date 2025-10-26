@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7341618513802274544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367668230543259533}
+  - component: {fileID: 2041549694669526525}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1367668230543259533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341618513802274544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2041549694669526525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341618513802274544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee28543c433f0a4fa3bf108a5e2a535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  bDontDestroyOnLoad: 1
+  data:
+    _serializedList:
+    - Key: 0
+      Value:
+      - clip: {fileID: 8300000, guid: ae70c798d124edc439c46681a43b8c75, type: 3}
+        volume: 1
+    - Key: 1
+      Value:
+      - clip: {fileID: 8300000, guid: 82a30e25865fb604ab3344217984f876, type: 3}
+        volume: 1
+    - Key: 2
+      Value:
+      - clip: {fileID: 8300000, guid: acdf0b656203f5f41afefea900f8f35c, type: 3}
+        volume: 1
+    - Key: 3
+      Value:
+      - clip: {fileID: 8300000, guid: 4ae66d5071749624a8acb01959edb350, type: 3}
+        volume: 1
+    - Key: 4
+      Value:
+      - clip: {fileID: 8300000, guid: d02cfdf96e8a68344b588e3cc7726317, type: 3}
+        volume: 1
+    - Key: 5
+      Value:
+      - clip: {fileID: 8300000, guid: 7be0037c0e24a114fbc4b7b46999ddad, type: 3}
+        volume: 1
+    - Key: 6
+      Value:
+      - clip: {fileID: 8300000, guid: b908dee131c1c574a9c6cbb29e209c6d, type: 3}
+        volume: 1
+    - Key: 7
+      Value:
+      - clip: {fileID: 8300000, guid: 542e31fb5d5666b469560362dc06473b, type: 3}
+        volume: 1
+    - Key: 8
+      Value:
+      - clip: {fileID: 8300000, guid: 590ef0b22c792374aa4ad70b1f74365d, type: 3}
+        volume: 1
+    - Key: 9
+      Value:
+      - clip: {fileID: 8300000, guid: 28096a76390ceb642ad73cd35eddc3c0, type: 3}
+        volume: 1
+    - Key: 10
+      Value:
+      - clip: {fileID: 8300000, guid: c9c53e029a6ace94e847d5156484206b, type: 3}
+        volume: 1
+    - Key: 11
+      Value:
+      - clip: {fileID: 8300000, guid: e3afec8af633128429100bc8b4edb8b0, type: 3}
+        volume: 1
+    - Key: 12
+      Value:
+      - clip: {fileID: 8300000, guid: 9e5cf7b8b6df663428cc66fc80e336cd, type: 3}
+        volume: 1
+    - Key: 13
+      Value:
+      - clip: {fileID: 8300000, guid: 5d1da6e3396120449b40fe84662d2c60, type: 3}
+        volume: 1
+    - Key: 14
+      Value:
+      - clip: {fileID: 8300000, guid: 1ce4d0777b855a242ace6fd03491b297, type: 3}
+        volume: 1
+    - Key: 15
+      Value:
+      - clip: {fileID: 8300000, guid: 98aa5e84fea95cf43925d78b47e7b09f, type: 3}
+        volume: 1
+    - Key: 16
+      Value:
+      - clip: {fileID: 8300000, guid: 1810fac18ab6f004a807d0854bbcad94, type: 3}
+        volume: 1
+    - Key: 17
+      Value:
+      - clip: {fileID: 8300000, guid: a19596dcb552c7e41ae542f1d1a223fd, type: 3}
+        volume: 1
+    - Key: 18
+      Value:
+      - clip: {fileID: 8300000, guid: 0c9e925bd312890499d4aa4e67490501, type: 3}
+        volume: 1
+    - Key: 19
+      Value:
+      - clip: {fileID: 8300000, guid: 3dbb3cd3d1f65f24381f5f0d5a302b7b, type: 3}
+        volume: 1
+    - Key: 20
+      Value:
+      - clip: {fileID: 8300000, guid: 9556459fab7664643921ee61181cfadc, type: 3}
+        volume: 1
+    - Key: 21
+      Value:
+      - clip: {fileID: 8300000, guid: b8e7ca72224a6ec4788e10a25328a001, type: 3}
+        volume: 1
+    - Key: 22
+      Value:
+      - clip: {fileID: 8300000, guid: 90272774c2dc08e44b4c7184dfa9d4ec, type: 3}
+        volume: 1
+    - Key: 23
+      Value:
+      - clip: {fileID: 8300000, guid: 41f4c7666a1252648b04871d2178b648, type: 3}
+        volume: 1
+  bgms: []
+  bgmVolumes: []

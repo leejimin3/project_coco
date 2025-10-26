@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
 guid: 0af233667797c4b82b60a614b57ab67c
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2074110005033429554
-    second: A1_Sky_0
-========
-guid: 7adcb6ede9215174496de16d47cc77bc
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 130886672765496906
-    second: STOP_0
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,11 +94,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,43 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-      name: A1_Sky_0
-========
-      name: STOP_0
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-        width: 2880
-        height: 1080
-========
-        width: 56
-        height: 56
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-      spriteID: 23ae91b7f08b8cc10800000000000000
-      internalID: 2074110005033429554
-========
-      spriteID: a4e25044cb001d100800000000000000
-      internalID: 130886672765496906
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -170,12 +122,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<<< HEAD:Assets/4.Arts/Backgrounds/De1/A1_Sky.png.meta
-      A1_Sky_0: 2074110005033429554
-========
-      STOP_0: 130886672765496906
->>>>>>>> 50b5506db35e829efcf0961c121d9e37b091d994:Assets/4.Arts/UI/STOP.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

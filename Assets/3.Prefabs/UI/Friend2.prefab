@@ -21,6 +21,10 @@ PrefabInstance:
       value: 176
       objectReference: {fileID: 0}
     - target: {fileID: 1897260846833834816, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
+      propertyPath: EFriend
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897260846833834816, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: DefaultImage
       value: 
       objectReference: {fileID: 1075993247170539406, guid: 22626e8b076b63f428480da11f7d98c4, type: 3}

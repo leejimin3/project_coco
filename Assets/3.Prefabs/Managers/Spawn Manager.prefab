@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2065799151126167920
+--- !u!1 &2877105957082856124
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2704085136484497467}
-  - component: {fileID: 1690929219241707253}
+  - component: {fileID: 5068160666479628619}
+  - component: {fileID: 6179725252544732158}
   m_Layer: 0
   m_Name: Spawn Manager
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2704085136484497467
+--- !u!4 &5068160666479628619
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065799151126167920}
+  m_GameObject: {fileID: 2877105957082856124}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,49 +32,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1690929219241707253
+--- !u!114 &6179725252544732158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065799151126167920}
+  m_GameObject: {fileID: 2877105957082856124}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5772fc3f7e9fe43d799b16d68aa19632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawnManager
   lanes:
-  - laneName: 1
+  - laneName: Lane 1
     obstacles:
-    - obstaclePrefab: {fileID: 4909043747519201949, guid: b31cbafec6806406d9fcaf0804dc2cec, type: 3}
-      weight: 1
-    spawnInterval: 5
-    spawnIntervalRandomRange: 2
-    spawnYOffset: -1.5
-    spawnYRandomRange: 0
-    moveSpeed: 2
-    moveSpeedRandomRange: 0
-    enableFlowEffect: 0
-    flowWaveAmplitudeX: 0
-    flowWaveAmplitudeY: 0
-    flowWaveSpeed: 0
-    nextSpawnTime: 0
-  - laneName: 2
-    obstacles:
-    - obstaclePrefab: {fileID: 4909043747519201949, guid: b31cbafec6806406d9fcaf0804dc2cec, type: 3}
-      weight: 1
-    spawnInterval: 5
-    spawnIntervalRandomRange: 2
-    spawnYOffset: -3
-    spawnYRandomRange: 0
-    moveSpeed: 2
-    moveSpeedRandomRange: 0
-    enableFlowEffect: 0
-    flowWaveAmplitudeX: 0
-    flowWaveAmplitudeY: 0
-    flowWaveSpeed: 0
-    nextSpawnTime: 0
+    - obstaclePrefab: {fileID: 5065237835109101522, guid: 045b21b3f9394ad4e87ce55c926f4a01, type: 3}
+      weight: 25
+    - obstaclePrefab: {fileID: 5930098110036500016, guid: 64d7e250d09d6694f83a0ce1ea40d31d, type: 3}
+      weight: 35
+    - obstaclePrefab: {fileID: 6539093930355163827, guid: 121783579e5e51c48836e5a9d29fefaa, type: 3}
+      weight: 55
+    spawnYOffset: -1
+  spawnIntervalMultiplier: 0.2
+  spawnIntervalRandomRatio: 0.02
   spawnXOffset: 1
+  baseSpeed: 5
+  weightSpeedMultiplier: 0.02
+  moveSpeedRandomRange: 2
   moveDirection: -1
+  enableFlowEffect: 1
+  flowWaveAmplitudeX: 0.3
+  flowWaveAmplitudeY: 0.2
+  flowWaveSpeed: 2
   showDebugLogs: 1

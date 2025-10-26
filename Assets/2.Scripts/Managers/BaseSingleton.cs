@@ -4,6 +4,8 @@ public abstract class BaseSingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T _instance;
 
+    [SerializeField] protected bool bDontDestroyOnLoad = true;
+
     public static T Instance
     {
         get
@@ -28,7 +30,9 @@ public abstract class BaseSingleton<T> : MonoBehaviour where T : MonoBehaviour
         if (_instance == null)
         {
             _instance = this as T;
-            DontDestroyOnLoad(gameObject);
+
+            if (bDontDestroyOnLoad)
+                DontDestroyOnLoad(gameObject);
         }
         else if (_instance != this)
         {
