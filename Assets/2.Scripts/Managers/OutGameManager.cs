@@ -20,4 +20,13 @@ public class OutGameManager : MonoBehaviour
         AudioManager.Instance.StopSfxLoop();
         SceneManager.LoadScene(0);
     }
+
+    public void ExitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
 }
