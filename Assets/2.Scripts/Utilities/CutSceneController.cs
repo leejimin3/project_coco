@@ -167,6 +167,7 @@ public class CutSceneController : MonoBehaviour
         
         if (transitionDelayTween != null && transitionDelayTween.IsActive())
         {
+            TransitionToNext();
             transitionDelayTween.Kill();
             transitionDelayTween = null;
         }
