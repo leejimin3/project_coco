@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ public class UIManager : BaseSingleton<UIManager>
 
     [SerializeField] public GameObject WinPanel;
     [SerializeField] public GameObject LosePanel;
+    
+    [SerializeField] public TextMeshProUGUI cocoText;
 
     public void ReStartPanel()
     {
@@ -28,5 +31,12 @@ public class UIManager : BaseSingleton<UIManager>
     public void OpenLosePanel()
     {
         LosePanel.SetActive(true);
+        cocoText.text = $"{(int)GameManager.Instance.rank} 코코미터";
+    }
+
+    public void GotoTitle()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }

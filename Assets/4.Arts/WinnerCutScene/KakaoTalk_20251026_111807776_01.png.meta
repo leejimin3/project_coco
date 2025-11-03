@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7e753e788981d4b17bc74292ce822f7c
+guid: 4dc2a26bb628ba84ab734d0eae0c426f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4606157284126940538
-    second: normal_0
+      213: 7649744774732881233
+    second: KakaoTalk_20251026_111807776_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: normal_0
+      name: KakaoTalk_20251026_111807776_01_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 514
-        height: 459
+        width: 548
+        height: 118
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7dd6fb35ab5cef30800000000000000
-      internalID: 4606157284126940538
+      spriteID: 15d9a50b75a592a60800000000000000
+      internalID: 7649744774732881233
       vertices: []
       indices: 
       edges: []
@@ -151,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      normal_0: 4606157284126940538
+      KakaoTalk_20251026_111807776_01_0: 7649744774732881233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

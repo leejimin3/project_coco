@@ -130,7 +130,10 @@ public class GameManager : BaseSingleton<GameManager>
         btns.Add(btn);
         keyPool.Remove(keyPool[ran]);
         buttonList.Remove(buttonList[btnRan]);
-        if (currentOpenedFriend >= btnsPos.Length) isFriendComplete = true;
+        if (currentOpenedFriend >= btnsPos.Length)
+        {
+            isFriendComplete = true;
+        }
     }
 
     public int KeyCodeInInt(KeyCode key)

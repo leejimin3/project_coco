@@ -168,13 +168,13 @@ public class AudioManager : BaseSingleton<AudioManager>
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        int sceneIndex = scene.buildIndex;
-        if (sceneIndex < bgms.Length && bgms[sceneIndex] != null)
-        {
-            bgmPlayer.clip = bgms[sceneIndex];
-            bgmPlayer.volume = bgmVolumes[sceneIndex];
-            PlayBgm(isBgmOn);
-        }
+        // int sceneIndex = scene.buildIndex;
+        // if (sceneIndex < bgms.Length && bgms[sceneIndex] != null)
+        // {
+        //     bgmPlayer.clip = bgms[sceneIndex];
+        //     bgmPlayer.volume = bgmVolumes[sceneIndex];
+        //     PlayBgm(isBgmOn);
+        // }
     }
 
     public void SetOptionState(OptionType type, bool isOn)
