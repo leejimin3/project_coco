@@ -112,7 +112,7 @@ public class Boat : MonoBehaviour
         // 일정 시간마다 새로운 목표 위치와 회전 설정
         if (timer >= changeInterval)
         {
-            HitFlag = false;
+            hitFlag = false;
             targetPosition = GetRandomPositionInRadius();
             targetRotation = GetRandomRotation();
             
@@ -326,7 +326,7 @@ public class Boat : MonoBehaviour
             float currentRot = transform.eulerAngles.z;
             if (currentRot > 180f) currentRot -= 360f;
 
-            if (!HitFlag)
+            if (!hitFlag)
             {
                 targetRotation = transform.eulerAngles.z;
             }
@@ -334,7 +334,7 @@ public class Boat : MonoBehaviour
             float impactRotation = obstacleComponent.GetImpactRotation();
             targetRotation += impactRotation;
             
-            HitFlag = true;
+            hitFlag = true;
             timer = 0f;
 
             Debug.Log($"Impact applied: {impactRotation} degrees. Current target rotation: {targetRotation}");
