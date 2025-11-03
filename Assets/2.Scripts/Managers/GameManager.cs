@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -36,6 +37,8 @@ public class GameManager : BaseSingleton<GameManager>
     public GameObject[] SpawnManagers;
     
     public GameObject ObstacleTrigger;
+
+    public Transform BoatPosition;
     
 
     private void Start()
@@ -81,7 +84,13 @@ public class GameManager : BaseSingleton<GameManager>
     public bool TryAttack(KeyCode key)
     {
         var obstacles = ObstacleManager.Instance.TriggeredObstacle;
-        foreach (var obstacle in obstacles)
+        
+        var sortedObstacles = obstacles
+            .Where(pair => pair.Key.transform.position.x > BoatPosition.position.x) // 오른쪽만 선택
+            .OrderBy(pair => pair.Key.transform.position.x - BoatPosition.position.x) // 차이값이 작은 순으로 정렬
+            .ToList();
+        
+        foreach (var obstacle in sortedObstacles)
         {
             foreach (var code in obstacle.Value)
             {
