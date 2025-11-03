@@ -48,6 +48,9 @@ public class CutSceneController : MonoBehaviour
     private bool isPlaying = false;
     
     [SerializeField] public AudioClip[] audioClip;
+    
+    private bool hasCompleted = false;
+    private Tween transitionDelayTween;
 
     private void Start()
     {
@@ -155,10 +158,20 @@ public class CutSceneController : MonoBehaviour
     /// </summary>
     public void SkipCutScene()
     {
+        if (hasCompleted) return;
+        
         if (mainSequence != null && mainSequence.IsActive())
         {
             mainSequence.Complete(true);
         }
+        
+        if (transitionDelayTween != null && transitionDelayTween.IsActive())
+        {
+            transitionDelayTween.Kill();
+            transitionDelayTween = null;
+        }
+
+        hasCompleted = true;
     }
 
     /// <summary>
@@ -182,12 +195,16 @@ public class CutSceneController : MonoBehaviour
     /// </summary>
     private void OnSequenceComplete()
     {
+        if (hasCompleted) return;
+        hasCompleted = true;
+        
         isPlaying = false;
         OnCutSceneComplete?.Invoke();
 
         if (autoTransition && !loop)
         {
-            DOVirtual.DelayedCall(transitionDelay, TransitionToNext);
+            transitionDelayTween = DOVirtual.DelayedCall(transitionDelay, TransitionToNext);
+            //DOVirtual.DelayedCall(transitionDelay, TransitionToNext);
         }
     }
 
