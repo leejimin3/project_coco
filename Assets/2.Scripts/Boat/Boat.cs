@@ -62,6 +62,8 @@ public class Boat : MonoBehaviour
     private float currentAlpha = 1f;
     private bool hasTriggeredFail = false;
 
+    private bool hitFlag = false;
+
     private void Start()
     {
         // SpriteRenderer 가져오기 및 Pivot을 Bottom Center로 설정
@@ -110,8 +112,10 @@ public class Boat : MonoBehaviour
         // 일정 시간마다 새로운 목표 위치와 회전 설정
         if (timer >= changeInterval)
         {
+            HitFlag = false;
             targetPosition = GetRandomPositionInRadius();
             targetRotation = GetRandomRotation();
+            
             timer = 0f;
         }
 
@@ -322,9 +326,15 @@ public class Boat : MonoBehaviour
             float currentRot = transform.eulerAngles.z;
             if (currentRot > 180f) currentRot -= 360f;
 
+            if (!HitFlag)
+            {
+                targetRotation = transform.eulerAngles.z;
+            }
+            
             float impactRotation = obstacleComponent.GetImpactRotation();
             targetRotation += impactRotation;
-
+            
+            HitFlag = true;
             timer = 0f;
 
             Debug.Log($"Impact applied: {impactRotation} degrees. Current target rotation: {targetRotation}");
