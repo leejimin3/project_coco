@@ -103,8 +103,7 @@ public class GameManager : BaseSingleton<GameManager>
         }
 
         return false;
-    }   
-
+    }
     public void TryInput()
     {
         for (int i = 0; i < keys.Count; i++)
@@ -113,6 +112,11 @@ public class GameManager : BaseSingleton<GameManager>
             {
                 btns[i].TryAttack();
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            UIManager.Instance.OpenSettingPanel();
         }
     }
 

@@ -10,9 +10,12 @@ public class UIManager : BaseSingleton<UIManager>
 
     [SerializeField] public GameObject WinPanel;
     [SerializeField] public GameObject LosePanel;
+    [SerializeField] public GameObject SettingPanel;
     
     [SerializeField] public TextMeshProUGUI cocoText;
 
+    private bool bisOpenSettingPanel = false;
+    
     public void ReStartPanel()
     {
         Time.timeScale = 1f;
@@ -38,5 +41,21 @@ public class UIManager : BaseSingleton<UIManager>
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
+    }
+
+    public void OpenSettingPanel()
+    {
+        if (bisOpenSettingPanel) return;
+        
+        bisOpenSettingPanel = true;
+        SettingPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ResumeGame()
+    {
+        bisOpenSettingPanel = false;
+        SettingPanel.SetActive(false);
+        Time.timeScale = 1f;   
     }
 }
