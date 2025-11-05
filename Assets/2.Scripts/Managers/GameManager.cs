@@ -201,6 +201,23 @@ public class GameManager : BaseSingleton<GameManager>
         return returnKeyList;
     }
 
+    public List<Sprite> GetFriendIcon(List<KeyCode> codes)
+    {
+        List<Sprite> sprites = new List<Sprite>();
+        foreach (var code in codes)
+        {
+            foreach (var btn in btns)
+            {
+                if (btn.key == code)
+                {
+                    sprites.Add(btn.UIImage);
+                }
+            }
+        }
+        
+        return sprites;
+    }
+
     /// <summary>
     /// 게임 실패 처리
     /// </summary>

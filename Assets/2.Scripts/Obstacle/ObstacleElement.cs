@@ -14,6 +14,13 @@ public class ObstacleElement : MonoBehaviour
         KeyRoot.SetActive(true);
         keyTMP.text = key;
     }
+    
+    public void ShowKey(Sprite sprite)
+    {
+        KeyRoot.SetActive(true);
+        spriteImage.sprite = sprite;
+        spriteImage.SetNativeSize();
+    }
 
     public void HideKey()
     {

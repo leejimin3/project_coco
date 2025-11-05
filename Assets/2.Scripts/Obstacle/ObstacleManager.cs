@@ -9,25 +9,24 @@ public class ObstacleManager : BaseSingleton<ObstacleManager>
     {
         List<KeyCode> codes = GameManager.Instance.GetRandomFriendsKeys(num);
         TriggeredObstacle.Add(ele, codes);
-        Debug.Log("Add");
         
-        string key = GameManager.Instance.KeyCodeInString(codes[0]);
-        ele.ShowKey(key);
+        List<Sprite> sprites = GameManager.Instance.GetFriendIcon(codes);
+        
+        //string key = GameManager.Instance.KeyCodeInString(codes[0]);
+        
+        ele.ShowKey(sprites[0]);
     }
 
     public void RemoveObstacle(ObstacleElement ele)
     {
         ele.HideKey();
         TriggeredObstacle.Remove(ele);
-        Debug.Log("Remove");
     }
 
     public void SuccecsObstacle(ObstacleElement ele)
     {
-        //TODO : 애니 재생
         ele.HideKey();
         TriggeredObstacle.Remove(ele);
-        Debug.Log("Succecs");
         Destroy(ele.gameObject);
         
     }

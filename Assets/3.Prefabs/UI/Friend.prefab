@@ -58,6 +58,7 @@ MonoBehaviour:
   DefaultImage: {fileID: -6599764356889070899, guid: 9d9ca40cf1187684fa4d19e33a23dc2c, type: 3}
   BodyImage: {fileID: 6886038773495314073}
   DimmedImage: {fileID: 2009359959358660782}
+  UIImage: {fileID: 21300000, guid: 11355b1bf20d40e4d9904836c025dd81, type: 3}
   DimmedValue: 0.2
   ReactionImage:
   - {fileID: -2040124082373211023, guid: 556df706bcee4d543b96579b3727f63a, type: 3}

@@ -25,6 +25,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1897260846833834816, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
+      propertyPath: UIImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ee74367e0245b64b9f79962d767754e, type: 3}
+    - target: {fileID: 1897260846833834816, guid: b1360bc72f1dc5c4aa64c046e0f0f02f, type: 3}
       propertyPath: DefaultImage
       value: 
       objectReference: {fileID: -5362292703166988329, guid: d370d8334e686054a88279fe23469469, type: 3}

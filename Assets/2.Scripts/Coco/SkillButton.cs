@@ -29,6 +29,7 @@ public class SkillButton : MonoBehaviour
     public Sprite DefaultImage;
     public Image BodyImage;
     public Image DimmedImage;
+    public Sprite UIImage;
     
     public float DimmedValue = 0.2f;
 
