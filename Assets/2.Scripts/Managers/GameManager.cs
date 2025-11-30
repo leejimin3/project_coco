@@ -14,8 +14,10 @@ public class GameManager : BaseSingleton<GameManager>
 
     private Coroutine fillCoroutine;
     public List<SkillButton> buttonList = new  List<SkillButton>();
+    public List<Sprite> buttonIconList = new  List<Sprite>();
+    public List<FriendTrigger> friendTriggers = new  List<FriendTrigger>();
     
-    List<KeyCode> keyPool = new List<KeyCode>
+    public List<KeyCode> keyPool = new List<KeyCode>
     {
         KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y, KeyCode.U, KeyCode.I, KeyCode.O, KeyCode.P,
         KeyCode.A, KeyCode.S, KeyCode.D, KeyCode.F, KeyCode.G, KeyCode.H, KeyCode.J, KeyCode.K, KeyCode.L,
@@ -25,8 +27,7 @@ public class GameManager : BaseSingleton<GameManager>
     public Transform[] btnsPos;
     public List<SkillButton> btns;
     public List<KeyCode> keys;
-
-    public float[] nextFriendValue = new float[] {0f, 0.1f, 0.25f, 0.4f};
+    
     public int currentOpenedFriend = 0;
     public bool isFriendComplete = false;
     public float rank;
@@ -39,10 +40,12 @@ public class GameManager : BaseSingleton<GameManager>
     public GameObject ObstacleTrigger;
 
     public Transform BoatPosition;
-    
 
-    private void Start()
+
+    protected override void Awake()
     {
+        base.Awake();
+        
         if (DataManager.Instance.difficulty == 0)
         {
             AudioManager.Instance.PlaySfxLoop(Sfx.bgm_ingame);            
@@ -56,6 +59,12 @@ public class GameManager : BaseSingleton<GameManager>
 
         StartFill();
         Instantiate(SpawnManagers[DataManager.Instance.difficulty]);
+        friendTriggers[currentOpenedFriend].SetNextTrigger();
+    }
+
+    private void Start()
+    {
+
     }
 
     private void Update()
@@ -120,32 +129,38 @@ public class GameManager : BaseSingleton<GameManager>
         }
     }
 
-    public void OpenNextFriend()
+    public void OpenNextFriend(int btn_DI, int text_DI)
     {
         if (isFriendComplete) return;
-        //if(slider.value < nextFriendValue[currentOpenedFriend]) return;
         
-        int btnRan = UnityEngine.Random.Range(0, buttonList.Count);
+        //int btnRan = UnityEngine.Random.Range(0, buttonList.Count);
+        int btnRan = btn_DI;
         SkillButton btn = Instantiate(buttonList[btnRan], Vector3.zero, Quaternion.identity);
         btn.transform.SetParent(btnsPos[currentOpenedFriend]);
         btn.transform.localPosition = Vector3.zero;
         btn.transform.localScale = Vector3.one;
         
-        int ran = UnityEngine.Random.Range(0, keyPool.Count);
+        //int ran = UnityEngine.Random.Range(0, keyPool.Count);
+        int ran = text_DI;
         KeyCode key = keyPool[ran];
         keys.Add(key);
         
         btn.key = keys[currentOpenedFriend];
         
-        btn.keyText.text = KeyCodeInString(keys[currentOpenedFriend]).ToString();
+        btn.keyText.text = KeyCodeInString(keys[currentOpenedFriend]);
         currentOpenedFriend++;
 
         btns.Add(btn);
         keyPool.Remove(keyPool[ran]);
         buttonList.Remove(buttonList[btnRan]);
+        buttonIconList.Remove(buttonIconList[btnRan]);
         if (currentOpenedFriend >= btnsPos.Length)
         {
             isFriendComplete = true;
+        }
+        else
+        {
+            friendTriggers[currentOpenedFriend].SetNextTrigger();
         }
     }
 
