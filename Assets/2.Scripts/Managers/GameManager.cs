@@ -17,7 +17,7 @@ public class GameManager : BaseSingleton<GameManager>
     public List<Sprite> buttonIconList = new  List<Sprite>();
     public List<FriendTrigger> friendTriggers = new  List<FriendTrigger>();
     
-    public List<KeyCode> keyPool = new List<KeyCode>
+    [HideInInspector] public List<KeyCode> keyPool = new List<KeyCode>
     {
         KeyCode.Q, KeyCode.W, KeyCode.E, KeyCode.R, KeyCode.T, KeyCode.Y, KeyCode.U, KeyCode.I, KeyCode.O, KeyCode.P,
         KeyCode.A, KeyCode.S, KeyCode.D, KeyCode.F, KeyCode.G, KeyCode.H, KeyCode.J, KeyCode.K, KeyCode.L,
@@ -162,6 +162,8 @@ public class GameManager : BaseSingleton<GameManager>
         {
             friendTriggers[currentOpenedFriend].SetNextTrigger();
         }
+
+        btn.StartReaction(true, true);
     }
 
     public int KeyCodeInInt(KeyCode key)

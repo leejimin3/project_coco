@@ -69,7 +69,7 @@ public class SkillButton : MonoBehaviour
         StartCoolDown();
     }
 
-    public void StartReaction(bool flag)
+    public void StartReaction(bool flag, bool onlySound = false)
     {
         if (ReactionCoroutine != null)
         {
@@ -79,15 +79,18 @@ public class SkillButton : MonoBehaviour
         }
             
 
-        ReactionCoroutine = StartCoroutine(Reaction(flag));
+        ReactionCoroutine = StartCoroutine(Reaction(flag, onlySound));
     }
 
-    private IEnumerator Reaction(bool flag)
+    private IEnumerator Reaction(bool flag, bool onlySound)
     {
         if (flag)
         {
-            BodyImage.sprite = ReactionImage[1];
-            DimmedImage.sprite = ReactionImage[1];
+            if (!onlySound)
+            {
+                BodyImage.sprite = ReactionImage[1];
+                DimmedImage.sprite = ReactionImage[1];   
+            }
 
             switch (EFriend)
             {
@@ -109,8 +112,11 @@ public class SkillButton : MonoBehaviour
         }
         else
         {
-            BodyImage.sprite = ReactionImage[0];
-            DimmedImage.sprite = ReactionImage[0];
+            if (!onlySound)
+            {
+                BodyImage.sprite = ReactionImage[0];
+                DimmedImage.sprite = ReactionImage[0];   
+            }
             
             switch (EFriend)
             {
