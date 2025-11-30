@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6613400116232642167}
   - component: {fileID: 1897260846833834816}
+  - component: {fileID: 345826813591982501}
   m_Layer: 5
   m_Name: Friend
   m_TagString: Untagged
@@ -65,6 +66,28 @@ MonoBehaviour:
   - {fileID: -2536704175745908611, guid: 77f0b6c00857c564c8876f2e6f70220c, type: 3}
   anim: {fileID: 0}
   EFriend: 2
+--- !u!95 &345826813591982501
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933010361609256278}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5461451cca6e3d84fa676d60c350dc09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1605819904680307627
 GameObject:
   m_ObjectHideFlags: 0
