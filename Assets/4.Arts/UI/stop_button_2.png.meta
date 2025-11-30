@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7fbbde603986b8747986e6f3d8785c11
+guid: bf66d8c13660cea408d9b44f33496dbb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7802829753009877197
-    second: whimper coco 2_0
+      213: 5092856790850854489
+    second: stop_button_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: whimper coco 2_0
+      name: stop_button_2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 251
-        height: 230
+        width: 465
+        height: 155
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33f4ff84ea7c6b390800000000000000
-      internalID: -7802829753009877197
+      spriteID: 95ed996a4467da640800000000000000
+      internalID: 5092856790850854489
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 19ad85abc386ae14c9b328b95ed1c1e3
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      whimper coco 2_0: -7802829753009877197
+      stop_button_2_0: 5092856790850854489
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
