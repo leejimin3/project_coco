@@ -5,7 +5,7 @@ public class IdleDetector : BaseSingleton<IdleDetector>
 {
     public float idleLimit = 30f;
     private float lastInputTime;
-    private bool isIdle = false;
+    [HideInInspector] public bool isIdle = false;
 
     void Start()
     {
@@ -52,12 +52,11 @@ public class IdleDetector : BaseSingleton<IdleDetector>
     /// </summary>
     private void OnIdle()
     {
-        AudioManager.Instance.PlayBgm(false);
         Time.timeScale = 1;
+        AudioManager.Instance.StopSfxLoop();
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             SceneManager.LoadScene(0);
-            AudioManager.Instance.PlayBgm(false);
         }
     }
 
@@ -68,5 +67,10 @@ public class IdleDetector : BaseSingleton<IdleDetector>
     {
         AudioManager.Instance.PlayBgm(true);
         Time.timeScale = 1;
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            AudioManager.Instance.PlaySfxLoop(Sfx.bgm_cutScene);
+        }
     }
 }

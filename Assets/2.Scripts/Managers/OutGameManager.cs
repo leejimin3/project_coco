@@ -5,6 +5,7 @@ public class OutGameManager : MonoBehaviour
 {
     void Start()
     {
+        if (IdleDetector.Instance.isIdle) return;
         AudioManager.Instance.PlaySfxLoop(Sfx.bgm_cutScene);
     }
 
