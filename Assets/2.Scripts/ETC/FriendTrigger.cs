@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class FriendTrigger : MonoBehaviour
 {
     [SerializeField] private Image image;
+    [SerializeField] private Image textBackImage;
     [SerializeField] private TextMeshProUGUI text;
 
     private int btnRan;
@@ -35,6 +36,9 @@ public class FriendTrigger : MonoBehaviour
         if (other.CompareTag("Coco"))
         {
             GameManager.Instance.OpenNextFriend(btnRan, textRan);
+            image.enabled = false;
+            textBackImage.enabled = false;
+            text.enabled = false;
         }
     }
 }
