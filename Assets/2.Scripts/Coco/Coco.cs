@@ -6,8 +6,6 @@ public class Coco : MonoBehaviour
     public Animator anim;
     public int runState;
 
-    public float moveSpeed = 1.66f;
-
     private void Awake()
     {
         anim = GetComponent<Animator>();
