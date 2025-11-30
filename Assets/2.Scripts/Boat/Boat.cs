@@ -316,7 +316,8 @@ public class Boat : MonoBehaviour
         // 충돌 이펙트 생성
         if (collisionEffectPrefab != null)
         {
-            Instantiate(collisionEffectPrefab, hitPoint, Quaternion.identity);
+            float ran = Random.Range(0f, 360f);
+            Instantiate(collisionEffectPrefab, hitPoint,  Quaternion.Euler(0f, 0f, ran));
         }
 
         // Obstacle 충격 처리
