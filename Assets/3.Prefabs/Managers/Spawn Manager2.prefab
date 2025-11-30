@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5772fc3f7e9fe43d799b16d68aa19632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawnManager
+  randomRange:
+  - -0.5
+  - -1.75
   lanes:
   - laneName: Lane 1
     obstacles:
@@ -53,7 +56,6 @@ MonoBehaviour:
       weight: 15
     - obstaclePrefab: {fileID: 6539093930355163827, guid: 121783579e5e51c48836e5a9d29fefaa, type: 3}
       weight: 25
-    spawnYOffset: -1
   spawnIntervalMultiplier: 0.2
   spawnIntervalRandomRatio: 0.02
   spawnXOffset: 1
