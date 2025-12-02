@@ -40,6 +40,7 @@ public class UIManager : BaseSingleton<UIManager>
     public void GotoTitle()
     {
         Time.timeScale = 1f;
+        AudioManager.Instance.StopSfxLoop();
         SceneManager.LoadScene(0);
     }
 
